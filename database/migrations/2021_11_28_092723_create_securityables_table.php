@@ -19,6 +19,7 @@ class CreateSecurityablesTable extends Migration
             $table->enum('type',['email','password']);
             $table->integer('securityable_id');
             $table->string('securityable_type');
+            $table->softDeletes();
             $table->timestamps();
         });
     }
