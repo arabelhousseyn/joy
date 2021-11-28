@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateLoginablesTable extends Migration
+class CreateSecurityablesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,12 @@ class CreateLoginablesTable extends Migration
      */
     public function up()
     {
-        Schema::create('loginables', function (Blueprint $table) {
+        Schema::create('securityables', function (Blueprint $table) {
             $table->id();
-            $table->timestamp('login_at');
-            $table->string('ip');
-            $table->string('user_agent');
-            $table->integer('loginable_id');
-            $table->string('loginable_type');
+            $table->timestamp('changed_at');
+            $table->enum('type',['email','password']);
+            $table->integer('securityable_id');
+            $table->string('securityable_type');
             $table->timestamps();
         });
     }
@@ -31,6 +30,6 @@ class CreateLoginablesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('loginables');
+        Schema::dropIfExists('securityables');
     }
 }
