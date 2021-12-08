@@ -12,8 +12,14 @@ class Securityable extends Model
     protected $fillable = [
         'changed_at',
         'type',
-        'securityable_id',
-        'securityable_type'
+        'securityable_type',
+        'securityable_id'
+    ];
+
+    protected $hidden = [
+        'created_at',
+        'updated_at',
+        'deleted_at'
     ];
 
     protected $casts = [

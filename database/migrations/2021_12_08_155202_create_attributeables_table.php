@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateLoginablesTable extends Migration
+class CreateAttributeablesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,11 @@ class CreateLoginablesTable extends Migration
      */
     public function up()
     {
-        Schema::create('loginables', function (Blueprint $table) {
+        Schema::create('attributeables', function (Blueprint $table) {
             $table->id();
-            $table->timestamp('login_at');
-            $table->string('ip');
-            $table->string('user_agent');
-            $table->morphs('loginable');
+            $table->string('attribute');
+            $table->string('value');
+            $table->morphs('attributeable');
             $table->softDeletes();
             $table->timestamps();
         });
@@ -31,6 +30,6 @@ class CreateLoginablesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('loginables');
+        Schema::dropIfExists('attributeables');
     }
 }
