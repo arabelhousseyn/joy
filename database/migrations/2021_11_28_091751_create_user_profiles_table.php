@@ -22,6 +22,7 @@ class CreateUserProfilesTable extends Migration
             $table->tinyInteger('sexe');
             $table->date('dob');
             $table->string('picture');
+            $table->enum('language',['en','fr','ar','am']);
             $table->softDeletes();
             $table->timestamps();
         });
