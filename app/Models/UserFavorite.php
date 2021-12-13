@@ -6,20 +6,13 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class RequestOpenBrandPayment extends Model
+class UserFavorite extends Model
 {
     use HasFactory, SoftDeletes;
 
     protected $fillable = [
-        'request_open_brand_id',
-        'type',
-        'receipt',
-        'card_name',
-        'card_number',
-        'exp_month',
-        'exp_year',
-        'cvv',
-        'card_type'
+        'user_id',
+        'product_id'
     ];
 
     protected $hidden = [
