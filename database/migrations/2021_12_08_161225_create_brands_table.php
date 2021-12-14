@@ -20,6 +20,8 @@ class CreateBrandsTable extends Migration
             $table->string('logo');
             $table->string('email');
             $table->string('phone');
+            $table->double('lat');
+            $table->double('long');
             $table->string('description')->nullable();
             $table->timestamps();
         });
