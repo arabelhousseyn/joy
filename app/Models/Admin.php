@@ -28,4 +28,14 @@ class Admin extends Authenticatable
     protected $hidden = [
         'password'
     ];
+
+    public function logins()
+    {
+        return $this->morphMany(Login::class,'loginable');
+    }
+
+    public function securities()
+    {
+        return $this->morphMany(Security::class,'securityable');
+    }
 }

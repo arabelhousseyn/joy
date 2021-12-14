@@ -27,4 +27,9 @@ class Login extends Model
     protected $casts = [
         'login_at' => 'date'
     ];
+
+    public function loginable()
+    {
+        return $this->morphTo();
+    }
 }

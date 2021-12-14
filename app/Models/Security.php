@@ -26,4 +26,9 @@ class Security extends Model
     protected $casts = [
         'changed_at' => 'date'
     ];
+
+    public function securityable()
+    {
+        return $this->morphTo();
+    }
 }

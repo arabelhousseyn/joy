@@ -72,4 +72,14 @@ class User extends Authenticatable
         return $this->hasOne(UserProvince::class);
     }
 
+    public function logins()
+    {
+        return $this->morphMany(Login::class,'loginable');
+    }
+
+    public function securities()
+    {
+        return $this->morphMany(Security::class,'securityable');
+    }
+
 }
