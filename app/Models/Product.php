@@ -21,4 +21,16 @@ class Product extends Model
         'updated_at',
         'deleted_at'
     ];
+
+    public function categories()
+    {
+        return $this->hasMany(ProductCategory::class);
+    }
+
+    public function images()
+    {
+        return $this->hasMany(ProductImage::class);
+    }
+
+
 }
