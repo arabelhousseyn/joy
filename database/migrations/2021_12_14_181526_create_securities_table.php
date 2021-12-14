@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateSecurityablesTable extends Migration
+class CreateSecuritiesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateSecurityablesTable extends Migration
      */
     public function up()
     {
-        Schema::create('securityables', function (Blueprint $table) {
+        Schema::create('securities', function (Blueprint $table) {
             $table->id();
             $table->timestamp('changed_at');
             $table->enum('type',['email','password']);
@@ -30,6 +30,6 @@ class CreateSecurityablesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('securityables');
+        Schema::dropIfExists('securities');
     }
 }
