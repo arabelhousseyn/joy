@@ -28,4 +28,14 @@ class RequestOpenBrand extends Model
         'updated_at',
         'deleted_at'
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+
+    public function payments()
+    {
+        return $this->hasMany(RequestOpenBrandPayment::class);
+    }
 }

@@ -22,6 +22,7 @@ class CreateBrandsTable extends Migration
             $table->string('phone');
             $table->double('lat');
             $table->double('long');
+            $table->date('expire_at');
             $table->string('description')->nullable();
             $table->softDeletes();
             $table->timestamps();

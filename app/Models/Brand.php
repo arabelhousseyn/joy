@@ -18,7 +18,8 @@ class Brand extends Model
         'phone',
         'lat',
         'long',
-        'description'
+        'description',
+        'expire_at'
     ];
 
     protected $hidden = [
@@ -26,4 +27,24 @@ class Brand extends Model
         'updated_at',
         'deleted_at'
     ];
+
+    public function categories()
+    {
+        return $this->hasMany(BrandCategory::class);
+    }
+
+    public function invoices()
+    {
+        return $this->hasMany(BrandInvoice::class);
+    }
+
+    public function products()
+    {
+        return $this->hasMany(BrandProduct::class);
+    }
+
+    public function socialLinks()
+    {
+        return $this->hasMany(BrandSocialLink::class);
+    }
 }

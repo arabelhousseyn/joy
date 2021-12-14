@@ -11,6 +11,7 @@ class UserPayment extends Model
     use HasFactory, SoftDeletes;
 
     protected $fillable = [
+        'user_id',
         'card_name',
         'card_number',
         'exp_month',

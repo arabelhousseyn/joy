@@ -20,4 +20,9 @@ class Category extends Model
         'updated_at',
         'deleted_at'
     ];
+
+    public function children()
+    {
+        return $this->hasMany(Category::class,'parent_id');
+    }
 }

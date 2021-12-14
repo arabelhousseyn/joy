@@ -27,4 +27,9 @@ class RequestOpenBrandPayment extends Model
         'updated_at',
         'deleted_at'
     ];
+
+    public function brand()
+    {
+        return $this->belongsTo(RequestOpenBrand::class);
+    }
 }
