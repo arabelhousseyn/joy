@@ -16,7 +16,7 @@ class CreateBrandInvoicesTable extends Migration
         Schema::create('brand_invoices', function (Blueprint $table) {
             $table->id();
             $table->foreignId('brand_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
-            $table->string('path');
+            $table->string('invoice_path');
             $table->softDeletes();
             $table->timestamps();
         });

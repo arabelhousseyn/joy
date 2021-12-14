@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateBrandsTable extends Migration
+class CreateBrandSocialLinksTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,11 @@ class CreateBrandsTable extends Migration
      */
     public function up()
     {
-        Schema::create('brands', function (Blueprint $table) {
+        Schema::create('brand_social_links', function (Blueprint $table) {
             $table->id();
-            $table->string('brand_number');
-            $table->string('name');
-            $table->string('logo');
-            $table->string('email');
-            $table->string('phone');
-            $table->string('description')->nullable();
+            $table->foreignId('brand_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
+            $table->string('link');
+            $table->enum('type',['facebook','instagram','youtube','twitter','other']);
             $table->timestamps();
         });
     }
@@ -32,6 +29,6 @@ class CreateBrandsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('brands');
+        Schema::dropIfExists('brand_social_links');
     }
 }
