@@ -23,6 +23,7 @@ class CreateBrandsTable extends Migration
             $table->double('lat');
             $table->double('long');
             $table->string('description')->nullable();
+            $table->softDeletes();
             $table->timestamps();
         });
     }

@@ -9,4 +9,12 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class BrandSocialLink extends Model
 {
     use HasFactory, SoftDeletes;
+
+    protected $fillable = [
+        'brand_id',
+        'link',
+        'type'
+    ];
+
+
 }
