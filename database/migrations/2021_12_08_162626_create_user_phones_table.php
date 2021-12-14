@@ -17,6 +17,8 @@ class CreateUserPhonesTable extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->string('phone');
+            $table->timestamp('phone_verified_at')->nullable();
+            $table->enum('type',['primary','secondary']);
             $table->softDeletes();
             $table->timestamps();
         });

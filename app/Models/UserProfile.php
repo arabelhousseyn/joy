@@ -18,4 +18,15 @@ class UserProfile extends Model
         'picture',
         'language'
     ];
+
+    protected $hidden = [
+        'created_at',
+        'updated_at',
+        'deleted_at'
+    ];
+
+    public function profilePictures()
+    {
+        return $this->hasMany(UserProfilePicture::class);
+    }
 }

@@ -17,7 +17,7 @@ class CreatePlansTable extends Migration
             $table->id();
             $table->string('name')->unique();
             $table->double('price')->unique();
-            $table->longText('description')->unique();
+            $table->longText('description');
             $table->json('benefits');
             $table->enum('grade',['A','B','C']);
             $table->softDeletes();
