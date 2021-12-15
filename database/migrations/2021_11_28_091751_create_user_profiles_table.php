@@ -16,12 +16,12 @@ class CreateUserProfilesTable extends Migration
         Schema::create('user_profiles', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->unique()->constrained()->onUpdate('cascade')->onDelete('cascade');
-            $table->string('username')->unique();
-            $table->string('fname');
-            $table->string('lname');
-            $table->tinyInteger('sexe');
-            $table->date('dob');
-            $table->enum('language',['en','fr','ar','am']);
+            $table->string('username')->unique()->nullable();
+            $table->string('fname')->nullable();
+            $table->string('lname')->nullable();
+            $table->tinyInteger('sexe')->nullable();
+            $table->date('dob')->nullable();
+            $table->enum('language',['en','fr','ar','am'])->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

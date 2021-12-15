@@ -37,5 +37,10 @@ class Product extends Model
         return $this->morphMany(Attribute::class,'attributeable');
     }
 
+    public function user()
+    {
+        return $this->hasOne(UserProduct::class);
+    }
+
 
 }
