@@ -28,7 +28,7 @@ class RequestOpenBrandPayment extends Model
         'deleted_at'
     ];
 
-    public function brand()
+    public function requestOpenBrand()
     {
         return $this->belongsTo(RequestOpenBrand::class);
     }
