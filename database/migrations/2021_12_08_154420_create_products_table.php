@@ -18,6 +18,7 @@ class CreateProductsTable extends Migration
             $table->string('title');
             $table->longText('description');
             $table->double('price');
+            $table->timestamp('accepted_at')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });
