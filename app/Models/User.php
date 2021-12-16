@@ -87,4 +87,9 @@ class User extends Authenticatable
         return $this->hasMany(UserProduct::class);
     }
 
+    public function onlines()
+    {
+        return $this->hasMany(UserOnline::class);
+    }
+
 }
