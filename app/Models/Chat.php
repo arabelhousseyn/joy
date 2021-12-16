@@ -21,4 +21,9 @@ class Chat extends Model
         'updated_at',
         'deleted_at'
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class,'buyer_id');
+    }
 }

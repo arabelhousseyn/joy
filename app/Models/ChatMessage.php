@@ -22,4 +22,19 @@ class ChatMessage extends Model
         'updated_at',
         'deleted_at'
     ];
+
+    public function chat()
+    {
+        return $this->belongsTo(Chat::class);
+    }
+
+    public function sender()
+    {
+        return $this->belongsTo(User::class,'sender_id');
+    }
+
+    public function receiver()
+    {
+        return $this->belongsTo(User::class,'receiver_id');
+    }
 }
