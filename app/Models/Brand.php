@@ -11,6 +11,7 @@ class Brand extends Model
     use HasFactory, SoftDeletes;
 
     protected $fillable = [
+        'user_id',
         'brand_number',
         'name',
         'logo',
@@ -46,5 +47,10 @@ class Brand extends Model
     public function socialLinks()
     {
         return $this->hasMany(BrandSocialLink::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
     }
 }
