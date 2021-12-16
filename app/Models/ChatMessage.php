@@ -25,16 +25,16 @@ class ChatMessage extends Model
 
     public function chat()
     {
-        return $this->belongsTo(Chat::class);
+        return $this->belongsTo(Chat::class)->withDefault();
     }
 
     public function sender()
     {
-        return $this->belongsTo(User::class,'sender_id');
+        return $this->belongsTo(User::class,'sender_id')->withDefault();
     }
 
     public function receiver()
     {
-        return $this->belongsTo(User::class,'receiver_id');
+        return $this->belongsTo(User::class,'receiver_id')->withDefault();
     }
 }

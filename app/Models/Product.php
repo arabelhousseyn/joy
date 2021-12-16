@@ -40,12 +40,12 @@ class Product extends Model
 
     public function user()
     {
-        return $this->hasOne(UserProduct::class);
+        return $this->hasOne(UserProduct::class)->withDefault();
     }
 
     public function brand()
     {
-        return $this->hasOne(BrandProduct::class);
+        return $this->hasOne(BrandProduct::class)->withDefault();
     }
 
 

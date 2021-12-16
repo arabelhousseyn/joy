@@ -64,12 +64,12 @@ class User extends Authenticatable
 
     public function profile()
     {
-        return $this->hasOne(UserProfile::class);
+        return $this->hasOne(UserProfile::class)->withDefault();
     }
 
     public function province()
     {
-        return $this->hasOne(UserProvince::class);
+        return $this->hasOne(UserProvince::class)->withDefault();
     }
 
     public function logins()

@@ -23,6 +23,6 @@ class UserProvince extends Model
 
     public function province()
     {
-        return $this->belongsTo(Province::class);
+        return $this->belongsTo(Province::class)->withDefault();
     }
 }

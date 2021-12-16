@@ -24,6 +24,6 @@ class Chat extends Model
 
     public function user()
     {
-        return $this->belongsTo(User::class,'buyer_id');
+        return $this->belongsTo(User::class,'buyer_id')->withDefault();
     }
 }

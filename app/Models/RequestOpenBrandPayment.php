@@ -30,6 +30,6 @@ class RequestOpenBrandPayment extends Model
 
     public function requestOpenBrand()
     {
-        return $this->belongsTo(RequestOpenBrand::class);
+        return $this->belongsTo(RequestOpenBrand::class)->withDefault();
     }
 }
