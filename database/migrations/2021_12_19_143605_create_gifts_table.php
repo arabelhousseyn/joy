@@ -18,6 +18,7 @@ class CreateGiftsTable extends Migration
             $table->string('name_gift');
             $table->longText('description');
             $table->double('price');
+            $table->string('points');
             $table->timestamps();
         });
     }
