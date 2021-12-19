@@ -17,7 +17,7 @@ class CreateLoginsTable extends Migration
             $table->id();
             $table->timestamp('login_at');
             $table->string('ip');
-            $table->string('user_agent');
+            $table->string('user_agent')->nullable();
             $table->morphs('loginable');
             $table->softDeletes();
             $table->timestamps();
