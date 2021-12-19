@@ -22,4 +22,14 @@ class CartItem extends Model
         'updated_at',
         'deleted_at'
     ];
+
+    public function cart()
+    {
+        return $this->belongsTo(Cart::class)->withDefault();
+    }
+
+    public function product()
+    {
+        return $this->belongsTo(Product::class)->withDefault();
+    }
 }
