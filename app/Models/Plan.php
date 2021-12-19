@@ -23,4 +23,9 @@ class Plan extends Model
         'updated_at',
         'deleted_at'
     ];
+
+    public function requestsBrand()
+    {
+        return $this->hasMany(RequestOpenBrand::class);
+    }
 }

@@ -16,6 +16,7 @@ class CreateRequestOpenBrandsTable extends Migration
         Schema::create('request_open_brands', function (Blueprint $table) {
             $table->id();
             $table->foreignId('user_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
+            $table->foreignId('plan_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->string('name_plan');
             $table->double('price_plan');
             $table->string('grade');

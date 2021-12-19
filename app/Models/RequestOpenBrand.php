@@ -38,4 +38,9 @@ class RequestOpenBrand extends Model
     {
         return $this->hasMany(RequestOpenBrandPayment::class);
     }
+
+    public function plan()
+    {
+        return $this->belongsTo(Plan::class)->withDefault();
+    }
 }

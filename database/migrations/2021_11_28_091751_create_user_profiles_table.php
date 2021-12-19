@@ -17,8 +17,9 @@ class CreateUserProfilesTable extends Migration
             $table->id();
             $table->foreignId('user_id')->unique()->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->string('username')->unique()->nullable();
-            $table->string('fname')->nullable();
-            $table->string('lname')->nullable();
+            $table->string('firstName')->nullable();
+            $table->string('middleName')->nullable();
+            $table->string('lastName')->nullable();
             $table->tinyInteger('sexe')->nullable();
             $table->date('dob')->nullable();
             $table->enum('language',['en','fr','ar','am'])->nullable();
