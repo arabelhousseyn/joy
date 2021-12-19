@@ -92,4 +92,9 @@ class User extends Authenticatable
         return $this->hasMany(UserOnline::class);
     }
 
+    public function feedbacks()
+    {
+        return $this->hasMany(Feddback::class);
+    }
+
 }
