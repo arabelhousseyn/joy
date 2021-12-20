@@ -15,7 +15,7 @@ class CreateUserBillingAddressesTable extends Migration
     {
         Schema::create('user_billing_addresses', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('user_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
+            $table->foreignId('user_id')->unique()->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->foreignId('province_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->string('name');
             $table->string('street_address');

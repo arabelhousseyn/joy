@@ -102,4 +102,9 @@ class User extends Authenticatable
         return $this->hasOne(UserBillingAddress::class);
     }
 
+    public function points()
+    {
+        return $this->hasMany(UserPoint::class);
+    }
+
 }
