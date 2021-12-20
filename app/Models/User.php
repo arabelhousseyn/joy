@@ -97,4 +97,9 @@ class User extends Authenticatable
         return $this->hasMany(Feddback::class);
     }
 
+    public function billing_address()
+    {
+        return $this->hasOne(UserBillingAddress::class);
+    }
+
 }

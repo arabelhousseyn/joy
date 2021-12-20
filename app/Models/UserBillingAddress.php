@@ -5,18 +5,19 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-class UserProfile extends Model
+
+class UserBillingAddress extends Model
 {
     use HasFactory, SoftDeletes;
+
     protected $fillable = [
         'user_id',
-        'username',
-        'firstName',
-        'lastName',
-        'middleName',
-        'sexe',
-        'dob',
-        'language'
+        'province_id',
+        'name',
+        'street_address',
+        'street_address2',
+        'zip_code',
+        'phone'
     ];
 
     protected $hidden = [
@@ -25,8 +26,8 @@ class UserProfile extends Model
         'deleted_at'
     ];
 
-    public function profilePictures()
+    public function user()
     {
-        return $this->hasMany(UserProfilePicture::class);
+        return $this->belongsTo(User::class);
     }
 }
