@@ -37,4 +37,9 @@ class Order extends Model
     {
         return $this->belongsTo(UserBillingAddress::class)->withDefault();
     }
+
+    public function payment()
+    {
+        return $this->hasOne(OrderPayment::class)->withDefault();
+    }
 }

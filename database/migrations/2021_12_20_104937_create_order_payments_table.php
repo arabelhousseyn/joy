@@ -15,7 +15,7 @@ class CreateOrderPaymentsTable extends Migration
     {
         Schema::create('order_payments', function (Blueprint $table) {
             $table->id();
-            $table->foreignId('order_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
+            $table->foreignId('order_id')->unique()->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->enum('type',['office','online']);
             $table->string('receipt')->nullable();
             $table->string('card_name')->nullable();

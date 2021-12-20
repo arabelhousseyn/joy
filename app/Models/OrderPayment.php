@@ -27,4 +27,9 @@ class OrderPayment extends Model
         'updated_at',
         'deleted_at'
     ];
+
+    public function order()
+    {
+        return $this->belongsTo(Order::class)->withDefault();
+    }
 }
