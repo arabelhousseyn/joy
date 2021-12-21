@@ -5,7 +5,8 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use App\Models\{
     User,
-    Country
+    Country,
+    Province
 };
 class DatabaseSeeder extends Seeder
 {
@@ -18,5 +19,6 @@ class DatabaseSeeder extends Seeder
     {
         User::factory(10)->create();
         Country::factory(1)->create();
+        Province::factory(1)->create();
     }
 }
