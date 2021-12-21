@@ -19,7 +19,7 @@ class CreateAdminsTable extends Migration
             $table->string('username');
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
-            $table->integer('phone')->unique();
+            $table->string('phone')->unique();
             $table->string('otp')->nullable();
             $table->timestamp('phone_verified_at')->nullable();
             $table->tinyInteger('is_admin');

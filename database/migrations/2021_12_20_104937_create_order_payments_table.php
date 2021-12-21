@@ -23,7 +23,7 @@ class CreateOrderPaymentsTable extends Migration
             $table->unsignedInteger('exp_month')->nullable();
             $table->unsignedBigInteger('exp_year')->nullable();
             $table->unsignedBigInteger('cvv')->nullable();
-            $table->enum('card_type',['visa','master card'])->nullable();
+            $table->string('card_type')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });

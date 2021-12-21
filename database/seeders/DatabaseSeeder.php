@@ -3,7 +3,7 @@
 namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
-use App\Models\{
+use App\Models\{Admin,
     User,
     Country,
     Province,
@@ -30,8 +30,7 @@ use App\Models\{
     Feedback,
     Gift,
     UserGift,
-    GiftImage
-};
+    GiftImage};
 class DatabaseSeeder extends Seeder
 {
     /**
@@ -41,6 +40,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        Admin::factory(1)->create();
         User::factory(10)->create();
         Country::factory(1)->create();
         Province::factory(1)->create();
