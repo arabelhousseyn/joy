@@ -12,7 +12,12 @@ class UserAdress extends Model
 
     protected $fillable = [
         'user_id',
-        'adress'
+        'province_id',
+        'name',
+        'street_address',
+        'street_address2',
+        'zip_code',
+        'phone'
     ];
 
     protected $hidden = [
@@ -20,4 +25,9 @@ class UserAdress extends Model
         'updated_at',
         'deleted_at'
     ];
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

@@ -42,4 +42,9 @@ class Order extends Model
     {
         return $this->hasOne(OrderPayment::class)->withDefault();
     }
+
+    public function status()
+    {
+        return $this->hasMany(OrderStatu::class);
+    }
 }
