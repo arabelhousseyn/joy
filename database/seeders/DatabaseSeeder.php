@@ -19,7 +19,9 @@ use App\Models\{
     Plan,
     RequestOpenBrand,
     RequestOpenBrandPayment,
-    Brand
+    Brand,
+    BrandCategory,
+    Product
 };
 class DatabaseSeeder extends Seeder
 {
@@ -46,5 +48,7 @@ class DatabaseSeeder extends Seeder
         RequestOpenBrand::factory(1)->create();
         RequestOpenBrandPayment::factory(1)->create();
         Brand::factory(1)->create();
+        BrandCategory::factory(1)->create();
+        Product::factory(20)->create();
     }
 }
