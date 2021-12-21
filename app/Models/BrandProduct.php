@@ -6,18 +6,13 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Cart extends Model
+class BrandProduct extends Model
 {
     use HasFactory, SoftDeletes;
 
     protected $fillable = [
-        'user_id',
-        'session_id',
-        'name_address',
-        'street_address',
-        'street_address2',
-        'zip_code',
-        'phone'
+        'brand_id',
+        'product_id'
     ];
 
     protected $hidden = [
@@ -25,9 +20,4 @@ class Cart extends Model
         'updated_at',
         'deleted_at'
     ];
-
-    public function user()
-    {
-        return $this->belongsTo(User::class)->withDefault();
-    }
 }

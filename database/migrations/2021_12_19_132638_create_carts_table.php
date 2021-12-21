@@ -17,6 +17,11 @@ class CreateCartsTable extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->unsignedBigInteger('session_id');
+            $table->string('name_address');
+            $table->string('street_address');
+            $table->string('street_address2')->nullable();
+            $table->string('zip_code');
+            $table->string('phone');
             $table->softDeletes();
             $table->timestamps();
         });
