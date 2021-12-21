@@ -21,7 +21,7 @@ class CreateUserPaymentsTable extends Migration
             $table->unsignedInteger('exp_month');
             $table->unsignedBigInteger('exp_year');
             $table->unsignedBigInteger('cvv');
-            $table->enum('card_type',['visa','master card']);
+            $table->string('card_type');
             $table->softDeletes();
             $table->timestamps();
         });
