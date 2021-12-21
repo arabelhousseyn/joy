@@ -7,7 +7,8 @@ use App\Models\{
     User,
     Country,
     Province,
-    UserAdress
+    UserAddress,
+    UserBillingAddress
 };
 class DatabaseSeeder extends Seeder
 {
@@ -21,5 +22,7 @@ class DatabaseSeeder extends Seeder
         User::factory(10)->create();
         Country::factory(1)->create();
         Province::factory(1)->create();
+        UserAddress::factory(10)->create();
+        UserBillingAddress::factory(10)->create();
     }
 }
