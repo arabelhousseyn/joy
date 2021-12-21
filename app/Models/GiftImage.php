@@ -6,15 +6,13 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Gift extends Model
+class GiftImage extends Model
 {
-    use HasFactory ,SoftDeletes;
+    use HasFactory, SoftDeletes;
 
     protected $fillable = [
-        'name_gift',
-        'description',
-        'price',
-        'points'
+        'gift_id',
+        'path'
     ];
 
     protected $hidden = [
@@ -22,9 +20,4 @@ class Gift extends Model
         'updated_at',
         'deleted_at'
     ];
-
-    public function images()
-    {
-        return $this->hasMany(GiftImage::class);
-    }
 }
