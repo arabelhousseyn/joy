@@ -14,7 +14,13 @@ class UserAddressFactory extends Factory
     public function definition()
     {
         return [
-            'user_id' => $this->faker->numberBetween(1,10)
+            'user_id' => $this->faker->numberBetween(1,10),
+            'province_id' => 1,
+            'name' => $this->faker->name,
+            'street_address' => $this->faker->streetAddress,
+            'street_address2' => $this->faker->streetAddress,
+            'zip_code' => $this->faker->postcode,
+            'phone' => $this->faker->phoneNumber
         ];
     }
 }

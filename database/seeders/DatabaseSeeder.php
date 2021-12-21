@@ -6,7 +6,8 @@ use Illuminate\Database\Seeder;
 use App\Models\{
     User,
     Country,
-    Province
+    Province,
+    UserAdress
 };
 class DatabaseSeeder extends Seeder
 {
