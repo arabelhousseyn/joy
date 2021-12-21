@@ -27,7 +27,8 @@ use App\Models\{
     ProductCategory,
     ProductImage,
     UserFavorite,
-    Feedback
+    Feedback,
+    Gift
 };
 class DatabaseSeeder extends Seeder
 {
@@ -62,5 +63,6 @@ class DatabaseSeeder extends Seeder
         ProductImage::factory(20)->create();
         UserFavorite::factory(10)->create();
         Feedback::factory(10)->create();
+        Gift::factory(10)->create();
     }
 }
