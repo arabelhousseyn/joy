@@ -26,7 +26,7 @@ class CreateRequestOpenBrandsTable extends Migration
             $table->string('logo');
             $table->string('commercial_document');
             $table->string('area');
-            $table->enum('status',['wating','revision','accepted','refused']);
+            $table->enum('status',['W','R','A','F']); // W for waiting , R for Revision , A for Accepted , F for Refused
             $table->softDeletes();
             $table->timestamps();
         });
