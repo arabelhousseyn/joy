@@ -13,7 +13,8 @@ use App\Models\{
     UserPayment,
     UserPhone,
     UserProfile,
-    UserProfilePicture
+    UserProfilePicture,
+    UserProvince
 };
 class DatabaseSeeder extends Seeder
 {
@@ -34,5 +35,6 @@ class DatabaseSeeder extends Seeder
         UserPhone::factory(10)->create();
         UserProfile::factory(3)->create();
         UserProfilePicture::factory(1)->create();
+        UserProvince::factory(3)->create();
     }
 }

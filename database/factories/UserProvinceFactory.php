@@ -4,7 +4,7 @@ namespace Database\Factories;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class UserProfilePictureFactory extends Factory
+class UserProvinceFactory extends Factory
 {
     /**
      * Define the model's default state.
@@ -14,8 +14,8 @@ class UserProfilePictureFactory extends Factory
     public function definition()
     {
         return [
-            'user_profile_id' => 1,
-            'path' => 'https://play-lh.googleusercontent.com/8QnH9AhsRfhPott7REiFUXXJLRIxi8KMAP0mFAZpYgd44OTOCtScwXeb5oPe1E4eP4oF=s180-rw'
+            'user_id' => $this->faker->numberBetween(1,10),
+            'province_id' => 1
         ];
     }
 }
