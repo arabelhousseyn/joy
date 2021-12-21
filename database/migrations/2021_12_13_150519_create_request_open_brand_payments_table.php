@@ -17,14 +17,14 @@ class CreateRequestOpenBrandPaymentsTable extends Migration
             $table->id();
             $table->foreignId('request_open_brand_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->string('payment_number');
-            $table->enum('type',['office','online']);
+            $table->enum('type',['F','N']); // O for office and N for online
             $table->string('receipt')->nullable();
             $table->string('card_name')->nullable();
             $table->string('card_number')->nullable();
             $table->unsignedInteger('exp_month')->nullable();
             $table->unsignedBigInteger('exp_year')->nullable();
             $table->unsignedBigInteger('cvv')->nullable();
-            $table->enum('card_type',['visa','master card'])->nullable();
+            $table->string('card_type')->nullable();
             $table->softDeletes();
             $table->timestamps();
         });
