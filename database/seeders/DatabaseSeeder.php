@@ -25,7 +25,9 @@ use App\Models\{
     Product,
     BrandSocialLink,
     ProductCategory,
-    ProductImage
+    ProductImage,
+    UserFavorite,
+    Feedback
 };
 class DatabaseSeeder extends Seeder
 {
@@ -58,5 +60,7 @@ class DatabaseSeeder extends Seeder
         Product::factory(20)->create();
         ProductCategory::factory(20)->create();
         ProductImage::factory(20)->create();
+        UserFavorite::factory(10)->create();
+        Feedback::factory(10)->create();
     }
 }

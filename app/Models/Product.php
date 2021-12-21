@@ -51,5 +51,10 @@ class Product extends Model
         return $this->belongsTo(Brand::class)->withDefault();
     }
 
+    public function feedbacks()
+    {
+        return $this->hasMany(Feedback::class);
+    }
+
 
 }
