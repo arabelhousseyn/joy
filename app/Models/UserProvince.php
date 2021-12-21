@@ -11,7 +11,7 @@ class UserProvince extends Model
     use HasFactory, SoftDeletes;
 
     protected $fillable = [
-        'User_id',
+        'user_id',
         'province_id'
     ];
 
