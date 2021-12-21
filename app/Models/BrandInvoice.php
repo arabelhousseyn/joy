@@ -12,7 +12,7 @@ class BrandInvoice extends Model
 
     protected $fillable = [
         'brand_id',
-        'path'
+        'invoice_path'
     ];
 
     protected $hidden = [
