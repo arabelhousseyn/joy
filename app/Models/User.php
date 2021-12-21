@@ -102,4 +102,9 @@ class User extends Authenticatable
         return $this->hasMany(UserPoint::class);
     }
 
+    public function gifts()
+    {
+        return $this->hasMany(UserGift::class);
+    }
+
 }
