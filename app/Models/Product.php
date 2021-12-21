@@ -11,6 +11,9 @@ class Product extends Model
     use HasFactory, SoftDeletes;
 
     protected $fillable = [
+        'user_id',
+        'brand_id',
+        'product_number',
         'title',
         'description',
         'price',
@@ -40,12 +43,12 @@ class Product extends Model
 
     public function user()
     {
-        return $this->hasOne(UserProduct::class)->withDefault();
+        return $this->belongsTo(User::class)->withDefault();
     }
 
     public function brand()
     {
-        return $this->hasOne(BrandProduct::class)->withDefault();
+        return $this->belongsTo(Brand::class)->withDefault();
     }
 
 

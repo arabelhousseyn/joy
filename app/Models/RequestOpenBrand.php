@@ -12,6 +12,8 @@ class RequestOpenBrand extends Model
 
     protected $fillable = [
         'user_id',
+        'plan_id',
+        'request_number',
         'name',
         'name_plan',
         'price_plan',

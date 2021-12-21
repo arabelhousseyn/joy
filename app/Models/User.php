@@ -82,11 +82,6 @@ class User extends Authenticatable
         return $this->morphMany(Security::class,'securityable');
     }
 
-    public function products()
-    {
-        return $this->hasMany(UserProduct::class);
-    }
-
     public function onlines()
     {
         return $this->hasMany(UserOnline::class);

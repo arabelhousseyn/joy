@@ -12,6 +12,7 @@ class RequestOpenBrandPayment extends Model
 
     protected $fillable = [
         'request_open_brand_id',
+        'payment_number',
         'type',
         'receipt',
         'card_name',

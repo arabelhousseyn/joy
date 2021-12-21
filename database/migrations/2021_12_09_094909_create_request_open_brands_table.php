@@ -17,6 +17,7 @@ class CreateRequestOpenBrandsTable extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->foreignId('plan_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
+            $table->string('request_number');
             $table->string('name_plan');
             $table->double('price_plan');
             $table->string('grade');

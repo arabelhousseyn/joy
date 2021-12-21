@@ -16,6 +16,7 @@ class CreateRequestOpenBrandPaymentsTable extends Migration
         Schema::create('request_open_brand_payments', function (Blueprint $table) {
             $table->id();
             $table->foreignId('request_open_brand_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
+            $table->string('payment_number');
             $table->enum('type',['office','online']);
             $table->string('receipt')->nullable();
             $table->string('card_name')->nullable();
