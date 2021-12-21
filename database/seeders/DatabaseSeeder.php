@@ -10,7 +10,8 @@ use App\Models\{
     UserAddress,
     UserBillingAddress,
     UserOnline,
-    UserPayment
+    UserPayment,
+    UserPhone
 };
 class DatabaseSeeder extends Seeder
 {
@@ -28,5 +29,6 @@ class DatabaseSeeder extends Seeder
         UserBillingAddress::factory(1)->create();
         UserOnline::factory(20)->create();
         UserPayment::factory(20)->create();
+        UserPhone::factory(10)->create();
     }
 }
