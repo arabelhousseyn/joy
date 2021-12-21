@@ -41,7 +41,7 @@ class Brand extends Model
 
     public function products()
     {
-        return $this->hasMany(BrandProduct::class);
+        return $this->hasMany(Product::class);
     }
 
     public function socialLinks()

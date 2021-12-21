@@ -22,7 +22,8 @@ use App\Models\{
     Brand,
     BrandCategory,
     BrandInvoice,
-    Product
+    Product,
+    BrandSocialLink
 };
 class DatabaseSeeder extends Seeder
 {
@@ -51,6 +52,7 @@ class DatabaseSeeder extends Seeder
         Brand::factory(1)->create();
         BrandCategory::factory(1)->create();
         BrandInvoice::factory(1)->create();
+        BrandSocialLink::factory(1)->create();
         Product::factory(20)->create();
     }
 }

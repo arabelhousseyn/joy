@@ -17,7 +17,7 @@ class CreateBrandSocialLinksTable extends Migration
             $table->id();
             $table->foreignId('brand_id')->constrained()->onUpdate('cascade')->onDelete('cascade');
             $table->string('link');
-            $table->enum('type',['facebook','instagram','youtube','twitter','other']);
+            $table->enum('type',['F','S','Y','W','O']); // F for facebook , S for instagram , Y for youtube , W for twitter , O for other
             $table->softDeletes();
             $table->timestamps();
         });
