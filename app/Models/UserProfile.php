@@ -15,7 +15,7 @@ class UserProfile extends Model
         'firstName',
         'lastName',
         'middleName',
-        'sexe',
+        'gender',
         'dob',
         'language'
     ];

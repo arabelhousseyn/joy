@@ -11,7 +11,9 @@ use App\Models\{
     UserBillingAddress,
     UserOnline,
     UserPayment,
-    UserPhone
+    UserPhone,
+    UserProfile,
+    UserProfilePicture
 };
 class DatabaseSeeder extends Seeder
 {
@@ -30,5 +32,7 @@ class DatabaseSeeder extends Seeder
         UserOnline::factory(20)->create();
         UserPayment::factory(20)->create();
         UserPhone::factory(10)->create();
+        UserProfile::factory(3)->create();
+        UserProfilePicture::factory(1)->create();
     }
 }

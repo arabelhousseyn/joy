@@ -21,9 +21,9 @@ class CreateUserProfilesTable extends Migration
             $table->string('firstName')->nullable();
             $table->string('middleName')->nullable();
             $table->string('lastName')->nullable();
-            $table->tinyInteger('sexe')->nullable();
+            $table->enum('gender',['M','F'])->nullable();
             $table->date('dob')->nullable();
-            $table->enum('language',['en','fr','ar','am'])->nullable();
+            $table->enum('language',['EN','FR','AR','AM'])->nullable();
             $table->softDeletes();
             $table->timestamps();
         });
