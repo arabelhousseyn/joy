@@ -13,7 +13,7 @@
 </head>
 <body>
   <div id="app">
-      <master-component />
+      <master-page />
   </div>
 <script src="js/app.js"></script>
 </body>

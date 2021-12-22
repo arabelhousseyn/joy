@@ -2,9 +2,12 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 Vue.use(VueRouter)
-//component: () => import(/* webpackChunkName: "about" */ '../views/About.vue')
-const routes = [
 
+const routes = [
+    {
+        path : '/',
+        component: () => import(/* webpackChunkName: "about" */ '../pages/MasterPage.vue')
+    }
 ]
 
 const router = new VueRouter({
