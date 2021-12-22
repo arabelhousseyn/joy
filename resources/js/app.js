@@ -19,8 +19,9 @@ window.Vue = require('vue').default;
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 import vuetify from "./plugins/vuetify";
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-
+import MasterComponent from './components/MasterComponent'
+import router from './router/index'
+import store from './store/index'
 /**
  * Next, we will create a fresh Vue application instance and attach it to
  * the page. Then, you may begin adding components to this application
@@ -29,5 +30,10 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 
 const app = new Vue({
     el: '#app',
-    vuetify
+    vuetify,
+    components : {
+        MasterComponent
+    },
+    router,
+    store
 });
