@@ -11286,3 +11286,18 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.button-color {
+  background: #e6ecf6;
+}
+
+.box {
+  box-shadow: 0 4px 16px rgba(43, 52, 69, 0.1);
+}
+
+.v-list-item.on-hover {
+  color: #d23f57 !important;
+}
+
+.v-icon > mdi mdi-car-outline:hover {
+  color: #d23f57 !important;
+}
