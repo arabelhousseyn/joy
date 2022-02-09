@@ -29329,7 +29329,7 @@ var render = function () {
     [
       _c(
         "v-app-bar",
-        { attrs: { elevation: "1", color: "white" } },
+        { attrs: { elevation: "0", color: "white" } },
         [
           _c("v-app-bar-nav-icon", {
             on: {
@@ -29407,10 +29407,7 @@ var render = function () {
                           [
                             _c(
                               "v-list-item",
-                              {
-                                attrs: { l: "" },
-                                on: { click: function () {} },
-                              },
+                              { on: { click: function () {} } },
                               [
                                 _c(
                                   "v-list-item-title",
@@ -29684,6 +29681,7 @@ var render = function () {
               _vm._v(" "),
               _c(
                 "v-list-item",
+                { on: { click: function () {} } },
                 [
                   _c(
                     "v-list-item-icon",

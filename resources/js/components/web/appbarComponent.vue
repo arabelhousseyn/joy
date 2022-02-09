@@ -1,6 +1,6 @@
 <template>
     <div id="appbar">
-        <v-app-bar elevation="1" color="white" >
+        <v-app-bar elevation="0" color="white" >
                <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
                <v-toolbar-title>Joy</v-toolbar-title>
             <v-spacer></v-spacer>
@@ -25,7 +25,7 @@
                                 </v-btn>
                             </template>
                             <v-list>
-                                <v-list-item l @click="() => {}" >
+                                <v-list-item  @click="() => {}" >
                                     <v-list-item-title> <v-icon>mdi-tshirt-crew</v-icon> Clothing</v-list-item-title>
                                 </v-list-item>
                             </v-list>
@@ -118,7 +118,7 @@
                     </v-list-item-action>
                 </v-list-item>
 
-                <v-list-item>
+                <v-list-item @click="()=>{}">
                     <v-list-item-icon>
                         <v-icon>mdi-account-plus</v-icon>
                     </v-list-item-icon>
