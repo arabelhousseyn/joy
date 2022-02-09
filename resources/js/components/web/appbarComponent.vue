@@ -149,14 +149,14 @@
                 <copyright-component />
             </v-list>
         </v-navigation-drawer>
-        <modal-component :dialog="dialog"  @cs="cs" />
+        <moda-login-component :dialog="dialog" @cs="cs" />
     </div>
 </template>
 
 
 <script>
 import CopyrightComponent from "../CopyrightComponent";
-import ModalComponent from "../ModalComponent";
+import ModaLoginComponent from "../ModaLoginComponent.vue";
 export default {
     data () {
         return {
@@ -183,7 +183,7 @@ export default {
         }
     },
     components : {
-        ModalComponent,
+        ModaLoginComponent,
         CopyrightComponent
     }
 }

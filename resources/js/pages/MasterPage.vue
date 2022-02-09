@@ -4,7 +4,7 @@
             <div v-if="isWeb" class="web">
                 <progress-component />
                 <appbar-component />
-                <header-component />
+                <router-view />
             </div>
             <div v-if="!isWeb" class="mobile">
             </div>
@@ -14,7 +14,6 @@
 <script>
 import appbarComponent from '../components/web/appbarComponent'
 import progressComponent from '../components/progressComponent'
-import HeaderComponent from "../components/web/HeaderComponent";
 
 export default {
     data : () =>{
@@ -23,7 +22,6 @@ export default {
       }
     },
     components : {
-        HeaderComponent,
         appbarComponent,
         progressComponent
     },

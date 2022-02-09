@@ -6,7 +6,7 @@ Vue.use(VueRouter)
 const routes = [
     {
         path : '/',
-        component: () => import(/* webpackChunkName: "about" */ '../pages/MasterPage.vue')
+        component: () => import(/* webpackChunkName: "about" */ '../components/MainComponent')
     }
 ]
 

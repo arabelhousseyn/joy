@@ -1,8 +1,8 @@
 <template>
     <div>
         <v-dialog
-            @click="close"
             v-model="dialog"
+            persistent
             max-width="600px"
         >
             <v-card>
