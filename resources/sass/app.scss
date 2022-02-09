@@ -11,12 +11,6 @@
     background: $cart-color;
 }
 
-.box{
-    box-shadow: $box;
-}
-.v-list-item.on-hover{
-    color: #d23f57 !important;
-}
-.v-icon > mdi mdi-car-outline:hover{
-    color: #d23f57 !important;
+.v-btn--flat{
+    background-color: transparent !important;
 }
