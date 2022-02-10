@@ -48,11 +48,7 @@
                         bottom
                     >
                         <template v-slot:activator="{ on, attrs }">
-                            <v-btn
-                                icon
-                                v-bind="attrs"
-                                v-on="on"
-                                link
+                            <v-btn v-bind="attrs" v-on="on" link elevation="0" color="white"
                             >
                                 <v-icon>mdi-translate</v-icon>
                             </v-btn>
@@ -71,13 +67,13 @@
                         </v-list>
                     </v-menu>
 
-                <router-link class="v-btn v-btn--flat theme--light v-btn--rounded v-size--default" to="/">
-                    <v-icon @click="loginForward">mdi-account</v-icon>
-                </router-link>
+                <v-btn elevation="0" color="white"class="v-size--default" @click="forward('/account')">
+                    <v-icon >mdi-account</v-icon>
+                </v-btn>
 
-                <router-link class="v-btn v-btn--flat theme--light v-btn--rounded v-size--default" to="/">
+                <v-btn elevation="0" color="white"class="v-size--default" @click="forward('/cart')">
                     <v-icon>mdi-cart-variant</v-icon>
-                </router-link>
+                </v-btn>
             </v-toolbar-items>
         </v-app-bar>
         <v-navigation-drawer
@@ -149,14 +145,68 @@
                 <copyright-component />
             </v-list>
         </v-navigation-drawer>
-        <moda-login-component :dialog="dialog" @cs="cs" />
+        <v-dialog
+            v-model="dialog"
+            width="500px"
+        >
+            <v-card>
+                <div class="px-3 px-md-10 py-8 ">
+                    <h3 class="mb-3 text-center">Welcome To Joy</h3>
+                    <h5 class="font-600 grey--text text--darken-3 text-sm mb-9 text-center">Log in with email & password</h5>
+                    <form @submit.prevent="test" method="post">
+                        <p class="text-14 mb-1">Phone Number</p>
+                        <v-text-field
+                            placeholder="Phone Number"
+                            outlined
+                            dense
+                            color="#3665f3"
+                        ></v-text-field>
+
+                        <p class="text-14 mb-1">Password</p>
+                        <v-text-field
+                            :append-icon="show1 ? 'mdi-eye' : 'mdi-eye-off'"
+                            :type="show1 ? 'text' : 'password'"
+                            placeholder="Password"
+                            counter
+                            outlined
+                            color="#3665f3"
+                            @click:append="show1 = !show1"
+                        ></v-text-field>
+                        <v-btn type="submit" block color="#d23f57">
+                            <span style="color:white;">Login</span>
+                        </v-btn>
+                    </form>
+                    <div class="d-flex align-center my-1">
+                        <v-divider></v-divider>
+                        <span class="mx-4">Or</span>
+                        <v-divider></v-divider>
+                    </div>
+                    <v-btn class="mb-4" block color="#4e5fbb">
+                        <v-icon color="white" left>mdi-facebook</v-icon>
+                        <span style="color:white;">Continue with facebook</span>
+                    </v-btn>
+
+                    <v-btn block color="#2b81d6">
+                        <v-icon color="white" left>mdi-google</v-icon>
+                        <span style="color:white;">Continue with google</span>
+                    </v-btn>
+                    <div class="text-14 text-center my-3">
+                        Don't have account? <a style="text-decoration:underline;" href="/signup">Sign Up</a>
+                    </div>
+                </div>
+                <div class="py-4 grey lighten-2">
+                    <div class="text-center">
+                        Forgot Your Password <a class="ms-2" style="text-decoration:underline;" href="/reset">Reset It</a>
+                    </div>
+                </div>
+            </v-card>
+        </v-dialog>
     </div>
 </template>
 
 
 <script>
 import CopyrightComponent from "../CopyrightComponent";
-import ModaLoginComponent from "../ModaLoginComponent.vue";
 export default {
     data () {
         return {
@@ -164,26 +214,25 @@ export default {
             drawer : null,
             switch1 : false,
             dialog : false,
+            show1 : false,
         }
     },
     methods : {
-       loginForward()
+       forward(params)
        {
 
            if(this.$store.state.isLogged)
            {
-               this.$router.push('/account')
+               this.$router.push(params)
            }else{
                this.dialog = true
            }
        },
-        cs()
-        {
-           this.dialog = false
+        test(){
+           console.log('test')
         }
     },
     components : {
-        ModaLoginComponent,
         CopyrightComponent
     }
 }
