@@ -172,7 +172,7 @@
                             color="#3665f3"
                             @click:append="show1 = !show1"
                         ></v-text-field>
-                        <v-btn type="submit" block color="#d23f57">
+                        <v-btn type="submit" block color="#ff9900">
                             <span style="color:white;">Login</span>
                         </v-btn>
                     </form>
