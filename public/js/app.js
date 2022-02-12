@@ -29665,7 +29665,7 @@ var render = function () {
                     staticClass:
                       "font-600 grey--text text--darken-3 text-sm mb-9 text-center",
                   },
-                  [_vm._v("Log in with email & password")]
+                  [_vm._v("Log in with phone & password")]
                 ),
                 _vm._v(" "),
                 _c(
