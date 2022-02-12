@@ -10,7 +10,7 @@ const routes = [
     },
     {
         path : '/signup',
-        component: () => import('../components/SignupComponent')
+        component: () => import('../components/ActionComponent')
     }
 ]
 

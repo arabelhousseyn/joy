@@ -154,19 +154,19 @@
                     <h3 class="mb-3 text-center">Welcome To Joy</h3>
                     <h5 class="font-600 grey--text text--darken-3 text-sm mb-9 text-center">Log in with email & password</h5>
                     <form @submit.prevent="test" method="post">
-                        <p class="text-14 mb-1">Phone Number</p>
+                        <p class="text-14 mb-1">Phone *</p>
                         <v-text-field
-                            placeholder="Phone Number"
+                            placeholder="Phone *"
                             outlined
                             dense
                             color="#3665f3"
                         ></v-text-field>
 
-                        <p class="text-14 mb-1">Password</p>
+                        <p class="text-14 mb-1">Password *</p>
                         <v-text-field
                             :append-icon="show1 ? 'mdi-eye' : 'mdi-eye-off'"
                             :type="show1 ? 'text' : 'password'"
-                            placeholder="Password"
+                            placeholder="Password *"
                             counter
                             outlined
                             color="#3665f3"

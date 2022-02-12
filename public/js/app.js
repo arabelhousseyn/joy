@@ -5746,7 +5746,7 @@ var routes = [{
 }, {
   path: '/signup',
   component: function component() {
-    return __webpack_require__.e(/*! import() */ "resources_js_components_SignupComponent_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/SignupComponent */ "./resources/js/components/SignupComponent.vue"));
+    return __webpack_require__.e(/*! import() */ "resources_js_components_ActionComponent_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/ActionComponent */ "./resources/js/components/ActionComponent.vue"));
   }
 }];
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
@@ -29681,12 +29681,12 @@ var render = function () {
                   },
                   [
                     _c("p", { staticClass: "text-14 mb-1" }, [
-                      _vm._v("Phone Number"),
+                      _vm._v("Phone *"),
                     ]),
                     _vm._v(" "),
                     _c("v-text-field", {
                       attrs: {
-                        placeholder: "Phone Number",
+                        placeholder: "Phone *",
                         outlined: "",
                         dense: "",
                         color: "#3665f3",
@@ -29694,14 +29694,14 @@ var render = function () {
                     }),
                     _vm._v(" "),
                     _c("p", { staticClass: "text-14 mb-1" }, [
-                      _vm._v("Password"),
+                      _vm._v("Password *"),
                     ]),
                     _vm._v(" "),
                     _c("v-text-field", {
                       attrs: {
                         "append-icon": _vm.show1 ? "mdi-eye" : "mdi-eye-off",
                         type: _vm.show1 ? "text" : "password",
-                        placeholder: "Password",
+                        placeholder: "Password *",
                         counter: "",
                         outlined: "",
                         color: "#3665f3",
@@ -92829,7 +92829,7 @@ module.exports = JSON.parse('{"_args":[["axios@0.21.4","C:\\\\wamp64\\\\www\\\\j
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_components_MainComponent_vue":1,"resources_js_components_SignupComponent_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_components_MainComponent_vue":1,"resources_js_components_ActionComponent_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};
