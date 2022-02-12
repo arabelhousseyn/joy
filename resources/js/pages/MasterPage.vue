@@ -1,8 +1,8 @@
 <template>
     <div >
         <v-app style="background-color: #f5f5f5 !important;">
+            <progress-component />
             <div v-if="isWeb" class="web">
-                <progress-component />
                 <appbar-component />
                 <router-view />
             </div>

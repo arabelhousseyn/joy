@@ -5288,8 +5288,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
-      overlay: false
+      overlay: true
     };
+  },
+  created: function created() {
+    var _this = this;
+
+    setTimeout(function () {
+      _this.overlay = false;
+    }, 5000);
   }
 });
 
@@ -29172,7 +29179,7 @@ var render = function () {
         { attrs: { opacity: "1", color: "white", value: _vm.overlay } },
         [
           _c("v-progress-circular", {
-            attrs: { color: "black", indeterminate: "", size: "64" },
+            attrs: { color: "#ff9900", indeterminate: "", size: "64" },
           }),
         ],
         1
@@ -29841,23 +29848,20 @@ var render = function () {
         "v-app",
         { staticStyle: { "background-color": "#f5f5f5 !important" } },
         [
+          _c("progress-component"),
+          _vm._v(" "),
           _vm.isWeb
             ? _c(
                 "div",
                 { staticClass: "web" },
-                [
-                  _c("progress-component"),
-                  _vm._v(" "),
-                  _c("appbar-component"),
-                  _vm._v(" "),
-                  _c("router-view"),
-                ],
+                [_c("appbar-component"), _vm._v(" "), _c("router-view")],
                 1
               )
             : _vm._e(),
           _vm._v(" "),
           !_vm.isWeb ? _c("div", { staticClass: "mobile" }) : _vm._e(),
-        ]
+        ],
+        1
       ),
     ],
     1
