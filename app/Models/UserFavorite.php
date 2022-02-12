@@ -23,6 +23,6 @@ class UserFavorite extends Model
 
     public function product()
     {
-        return $this->belongsTo(Product::class)->withDefault();
+        return $this->belongsTo(Product::class,'product_id')->withDefault();
     }
 }

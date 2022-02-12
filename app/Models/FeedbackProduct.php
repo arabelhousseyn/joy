@@ -6,29 +6,29 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Feedback extends Model
+class FeedbackProduct extends Model
 {
     use HasFactory, SoftDeletes;
+
     protected $fillable = [
         'user_id',
         'product_id',
         'rating',
-        'description_rate'
+        'rating'
     ];
 
     protected $hidden = [
         'created_at',
-        'updated_at',
         'deleted_at'
     ];
 
     public function user()
     {
-        return $this->belongsTo(User::class);
+        return $this->belongsTo(User::class,'user_id')->withDefault();
     }
 
     public function product()
     {
-        return $this->belongsTo(Product::class);
+        return $this->belongsTo(Product::class,'product_id')->withDefault();
     }
 }

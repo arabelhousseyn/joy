@@ -43,17 +43,17 @@ class Product extends Model
 
     public function user()
     {
-        return $this->belongsTo(User::class)->withDefault();
+        return $this->belongsTo(User::class,'user_id')->withDefault();
     }
 
     public function brand()
     {
-        return $this->belongsTo(Brand::class)->withDefault();
+        return $this->belongsTo(Brand::class,'brand_id')->withDefault();
     }
 
     public function feedbacks()
     {
-        return $this->hasMany(Feedback::class);
+        return $this->hasMany(FeedbackProduct::class);
     }
 
 

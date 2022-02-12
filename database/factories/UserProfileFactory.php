@@ -15,8 +15,7 @@ class UserProfileFactory extends Factory
     {
         return [
             'user_id' => 1,
-            'user_number' => $this->faker->numberBetween(),
-            'username' => $this->faker->userName,
+            'user_number' => $this->faker->uuid,
             'firstName' => $this->faker->firstName,
             'lastName' => $this->faker->lastName,
             'middleName' => $this->faker->name,

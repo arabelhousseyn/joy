@@ -89,7 +89,7 @@ class User extends Authenticatable
 
     public function feedbacks()
     {
-        return $this->hasMany(Feedback::class);
+        return $this->hasMany(FeedbackProduct::class);
     }
 
     public function billing_address()

@@ -30,12 +30,12 @@ class Order extends Model
 
     public function user()
     {
-        return $this->belongsTo(User::class)->withDefault();
+        return $this->belongsTo(User::class,'user_id')->withDefault();
     }
 
     public function billing()
     {
-        return $this->belongsTo(UserBillingAddress::class)->withDefault();
+        return $this->belongsTo(UserBillingAddress::class,'user_billing_address_id')->withDefault();
     }
 
     public function payment()

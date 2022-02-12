@@ -5741,7 +5741,12 @@ vue__WEBPACK_IMPORTED_MODULE_0__["default"].use(vue_router__WEBPACK_IMPORTED_MOD
 var routes = [{
   path: '/',
   component: function component() {
-    return __webpack_require__.e(/*! import() | about */ "about").then(__webpack_require__.bind(__webpack_require__, /*! ../components/MainComponent */ "./resources/js/components/MainComponent.vue"));
+    return __webpack_require__.e(/*! import() */ "resources_js_components_MainComponent_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/MainComponent */ "./resources/js/components/MainComponent.vue"));
+  }
+}, {
+  path: '/signup',
+  component: function component() {
+    return __webpack_require__.e(/*! import() */ "resources_js_components_SignupComponent_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/SignupComponent */ "./resources/js/components/SignupComponent.vue"));
   }
 }];
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
@@ -92824,7 +92829,7 @@ module.exports = JSON.parse('{"_args":[["axios@0.21.4","C:\\\\wamp64\\\\www\\\\j
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if (chunkId === "about") return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_components_MainComponent_vue":1,"resources_js_components_SignupComponent_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

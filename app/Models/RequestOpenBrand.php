@@ -33,7 +33,7 @@ class RequestOpenBrand extends Model
 
     public function user()
     {
-        return $this->belongsTo(User::class)->withDefault();
+        return $this->belongsTo(User::class,'user_id')->withDefault();
     }
 
     public function payments()
@@ -43,6 +43,6 @@ class RequestOpenBrand extends Model
 
     public function plan()
     {
-        return $this->belongsTo(Plan::class)->withDefault();
+        return $this->belongsTo(Plan::class,'plan_id')->withDefault();
     }
 }

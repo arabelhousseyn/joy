@@ -25,7 +25,7 @@ class ChatMessage extends Model
 
     public function chat()
     {
-        return $this->belongsTo(Chat::class)->withDefault();
+        return $this->belongsTo(Chat::class,'chat_id')->withDefault();
     }
 
     public function sender()

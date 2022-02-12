@@ -23,6 +23,6 @@ class BrandCategory extends Model
 
     public function category()
     {
-        return $this->belongsTo(Category::class)->withDefault();
+        return $this->belongsTo(Category::class,'brand_id')->withDefault();
     }
 }

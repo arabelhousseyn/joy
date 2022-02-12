@@ -64,7 +64,6 @@ class DatabaseSeeder extends Seeder
         ProductCategory::factory(20)->create();
         ProductImage::factory(20)->create();
         UserFavorite::factory(10)->create();
-        Feedback::factory(10)->create();
         Gift::factory(10)->create();
         UserGift::factory(2)->create();
         GiftImage::factory(10)->create();

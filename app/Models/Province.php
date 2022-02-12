@@ -23,6 +23,6 @@ class Province extends Model
 
     public function country()
     {
-        return $this->belongsTo(Country::class)->withDefault();
+        return $this->belongsTo(Country::class,'country_id')->withDefault();
     }
 }
