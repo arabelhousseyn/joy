@@ -11,6 +11,14 @@ const routes = [
     {
         path : '/signup',
         component: () => import('../components/ActionComponent')
+    },
+    {
+        path : '/reset',
+        component: () => import('../components/ResetComponent')
+    },
+    {
+        path : '/reset-password',
+        component: () => import('../components/ResetPasswordConfirm')
     }
 ]
 

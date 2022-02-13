@@ -14,7 +14,7 @@
 export default {
     data : () => {
         return{
-            overlay: true
+            overlay: false
         }
     },
     created() {

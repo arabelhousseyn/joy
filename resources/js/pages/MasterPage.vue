@@ -3,7 +3,7 @@
         <v-app style="background-color: #f5f5f5 !important;">
             <progress-component />
             <div v-if="isWeb" class="web">
-                <appbar-component />
+                <appbar-component v-if="$store.state.show" />
                 <router-view />
             </div>
             <div v-if="!isWeb" class="mobile">
@@ -31,6 +31,7 @@ export default {
         {
             this.isWeb = false
         }
+        this.$store.commit('CHECK_URL')
     }
 }
 </script>
