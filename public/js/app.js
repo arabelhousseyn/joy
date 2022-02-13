@@ -5844,8 +5844,6 @@ vue__WEBPACK_IMPORTED_MODULE_0__["default"].use(vuex__WEBPACK_IMPORTED_MODULE_1_
           _iterator.f();
         }
 
-        console.log(exists);
-
         if (exists) {
           store.show = false;
         } else {

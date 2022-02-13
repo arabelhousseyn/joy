@@ -17,9 +17,45 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
-    return {};
+    return {
+      show1: false,
+      show2: false
+    };
   },
   mounted: function mounted() {
     this.$store.commit('CHECK_URL_RESET');
@@ -113,7 +149,118 @@ var render = function () {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return !_vm.$store.state.show
-    ? _c("div", [_vm._v("\n    welcome to reset password\n")])
+    ? _c(
+        "div",
+        { staticClass: "reset-password" },
+        [
+          _c(
+            "v-container",
+            { staticClass: "d-flex justify-content-center mt-10" },
+            [
+              _c(
+                "div",
+                { staticClass: "flex-column", staticStyle: { width: "700px" } },
+                [
+                  _c("div", { staticClass: "text-center" }, [
+                    _c("h1", [_vm._v("logo")]),
+                  ]),
+                  _vm._v(" "),
+                  _c(
+                    "v-card",
+                    { staticClass: "mt-5" },
+                    [
+                      _c(
+                        "v-card-title",
+                        {
+                          staticClass:
+                            "text-center font-weight-bold text-h5 text-no-wrap",
+                          staticStyle: { color: "#3665f3" },
+                        },
+                        [_vm._v("Reset password")]
+                      ),
+                      _vm._v(" "),
+                      _c("v-card-text", [
+                        _c(
+                          "form",
+                          {
+                            attrs: { method: "get" },
+                            on: {
+                              submit: function ($event) {
+                                $event.preventDefault()
+                                return _vm.reset.apply(null, arguments)
+                              },
+                            },
+                          },
+                          [
+                            _c("v-text-field", {
+                              attrs: {
+                                "append-icon": _vm.show1
+                                  ? "mdi-eye"
+                                  : "mdi-eye-off",
+                                type: _vm.show1 ? "text" : "password",
+                                placeholder: "New password *",
+                                counter: "",
+                                outlined: "",
+                                color: "#3665f3",
+                              },
+                              on: {
+                                "click:append": function ($event) {
+                                  _vm.show1 = !_vm.show1
+                                },
+                              },
+                            }),
+                            _vm._v(" "),
+                            _c("v-text-field", {
+                              attrs: {
+                                "append-icon": _vm.show2
+                                  ? "mdi-eye"
+                                  : "mdi-eye-off",
+                                type: _vm.show2 ? "text" : "password",
+                                placeholder: "Confirm new password *",
+                                counter: "",
+                                outlined: "",
+                                color: "#3665f3",
+                              },
+                              on: {
+                                "click:append": function ($event) {
+                                  _vm.show2 = !_vm.show2
+                                },
+                              },
+                            }),
+                            _vm._v(" "),
+                            _c(
+                              "v-btn",
+                              {
+                                attrs: {
+                                  type: "submit",
+                                  elevation: "0",
+                                  block: "",
+                                  color: "#ff9900",
+                                },
+                              },
+                              [
+                                _c(
+                                  "span",
+                                  { staticStyle: { color: "white" } },
+                                  [_vm._v("Reset it!")]
+                                ),
+                              ]
+                            ),
+                          ],
+                          1
+                        ),
+                      ]),
+                    ],
+                    1
+                  ),
+                ],
+                1
+              ),
+            ]
+          ),
+        ],
+        1
+      )
     : _vm._e()
 }
 var staticRenderFns = []

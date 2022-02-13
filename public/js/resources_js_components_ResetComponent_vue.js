@@ -238,7 +238,7 @@ var render = function () {
                           },
                           [
                             _c("span", { staticStyle: { color: "white" } }, [
-                              _vm._v("Reset it!"),
+                              _vm._v("Send link!"),
                             ]),
                           ]
                         ),

@@ -24,7 +24,7 @@
                              dense
                              color="#3665f3"
                          ></v-text-field>
-                         <v-btn type="submit" elevation="0" block color="#ff9900"><span style="color: white;">Reset it!</span></v-btn>
+                         <v-btn type="submit" elevation="0" block color="#ff9900"><span style="color: white;">Send link!</span></v-btn>
                      </form>
                  </v-card-text>
              </v-card>

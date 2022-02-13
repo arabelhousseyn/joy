@@ -39,7 +39,6 @@ export default new Vuex.Store({
                         }
                     }
                 }
-                console.log(exists)
                 if(exists)
                 {
                     store.show = false
