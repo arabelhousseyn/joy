@@ -3,15 +3,18 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Eloquent\SoftDeletes;
+use Jenssegers\Mongodb\Eloquent\SoftDeletes;
+use Jenssegers\Mongodb\Eloquent\Model;
 
 class Province extends Model
 {
     use HasFactory, SoftDeletes;
 
+    protected $collection = 'provinces';
+
     protected $fillable = [
         'country_id',
+        'code',
         'name'
     ];
 

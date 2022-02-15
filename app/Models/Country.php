@@ -24,4 +24,9 @@ class Country extends Model
         'updated_at',
         'deleted_at'
     ];
+
+    public function provinces()
+    {
+        return $this->hasMany(Province::class);
+    }
 }
