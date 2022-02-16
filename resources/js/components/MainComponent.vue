@@ -1,11 +1,16 @@
 <template>
     <div>
-        <header-component />
+        <v-container fluid>
+            <v-main>
+                <top-brand-component />
+            </v-main>
+        </v-container>
     </div>
 </template>
 <script>
-import HeaderComponent from "./web/HeaderComponent";
+
+import TopBrandComponent from "./TopBrandComponent";
 export default {
-    components: {HeaderComponent}
+    components: {TopBrandComponent}
 }
 </script>

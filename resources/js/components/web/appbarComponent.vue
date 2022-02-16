@@ -1,6 +1,6 @@
 <template>
     <div id="appbar">
-        <v-app-bar elevation="0" color="white" >
+        <v-app-bar elevation="1" hide-on-scroll color="white" >
                <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
                <v-toolbar-title>Joy</v-toolbar-title>
             <v-spacer></v-spacer>
@@ -40,9 +40,9 @@
                 </v-text-field>
             <v-spacer></v-spacer>
             <v-toolbar-items>
-                    <router-link class="v-btn v-btn--active v-btn--flat theme--light v-btn--rounded v-size--default" to="/">
-                            <v-icon color="#ff9900">mdi-home</v-icon>
-                    </router-link>
+                <v-btn class="v-btn v-btn--active v-btn--flat theme--light v-btn--rounded v-size--default"  elevation="0" color="white" @click="Home">
+                    <v-icon class="primary--text">mdi-home</v-icon>
+                </v-btn>
                     <v-menu
                         left
                         bottom
@@ -228,6 +228,10 @@ export default {
                this.dialog = true
            }
        },
+        Home()
+        {
+          window.location.href = '/'
+        },
         test(){
            console.log('test')
         }

@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <v-sheet outlined style="background-color: #f6f9fc !important;" v-if="$store.state.show">
       <v-container fluid>
           <v-row>
               <v-col cols="12" xl="10" lg="10" md="10" sm="12">
@@ -17,7 +17,7 @@
               </v-col>
           </v-row>
       </v-container>
-    </div>
+    </v-sheet>
 </template>
 
 <script>
@@ -40,5 +40,8 @@ export default {
             ],
         }
     },
+    mounted() {
+        this.$store.commit('CHECK_URL')
+    }
 }
 </script>
