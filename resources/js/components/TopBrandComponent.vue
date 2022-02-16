@@ -1,15 +1,6 @@
 <template>
         <div class="top-bar">
-            <v-subheader>
-                <div class="row align-center">
-                    <v-avatar height="48" width="48" min-width="48" rounded >
-                        <v-icon class="primary--text" large>mdi mdi-store</v-icon>
-                    </v-avatar>
-                    <div cols="10" class="o-section-heading__content">
-                        <heading-title-component title="Top brands" />
-                    </div>
-                </div>
-            </v-subheader>
+            <heading-title-component title="Top brands" icon="mdi mdi-store" />
             <v-slide-group
                 v-model="model"
                 show-arrows

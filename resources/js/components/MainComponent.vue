@@ -1,16 +1,16 @@
 <template>
-    <div>
         <v-container fluid>
             <v-main>
                 <top-brand-component />
+                <MainProductsComponent />
             </v-main>
         </v-container>
-    </div>
 </template>
 <script>
 
 import TopBrandComponent from "./TopBrandComponent";
+import MainProductsComponent from "./web/MainProductsComponent";
 export default {
-    components: {TopBrandComponent}
+    components: {MainProductsComponent, TopBrandComponent}
 }
 </script>
