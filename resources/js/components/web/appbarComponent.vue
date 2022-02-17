@@ -1,6 +1,6 @@
 <template>
     <div id="appbar">
-        <v-app-bar elevation="1" hide-on-scroll color="white" >
+        <v-app-bar elevation="1" hide-on-scroll class="white">
                <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
                <v-toolbar-title>Joy</v-toolbar-title>
             <v-spacer></v-spacer>
@@ -15,11 +15,11 @@
                         <v-menu offset-y>
                             <template v-slot:activator="{ on, attrs }">
                                 <v-btn
-                                    style=" margin-top: -7px !important;"
+                                    style=" margin-top: -6px !important;"
                                     v-bind="attrs"
                                     v-on="on"
                                     elevation="0"
-                                    color="white"
+                                    class="white"
                                 >
                                     All <v-icon>mdi-menu-down</v-icon>
                                 </v-btn>
@@ -33,14 +33,14 @@
                     </template>
 
                     <template v-slot:append>
-                                <v-btn style=" margin-top: -7px !important;" rounded elevation="0" color="#3665f3">
+                                <v-btn style=" margin-top: -6px !important;" rounded elevation="0" color="#3665f3">
                                     <span style="color:white;"><v-icon>mdi-magnify</v-icon></span>
                                 </v-btn>
                     </template>
                 </v-text-field>
             <v-spacer></v-spacer>
             <v-toolbar-items>
-                <v-btn class="v-btn v-btn--active v-btn--flat theme--light v-btn--rounded v-size--default"  elevation="0" color="white" @click="Home">
+                <v-btn class="v-btn v-btn--active v-btn--flat theme--light v-btn--rounded v-size--default white"  elevation="0" @click="Home">
                     <v-icon class="primary--text">mdi-home</v-icon>
                 </v-btn>
                     <v-menu
@@ -48,7 +48,7 @@
                         bottom
                     >
                         <template v-slot:activator="{ on, attrs }">
-                            <v-btn v-bind="attrs" v-on="on" link elevation="0" color="white"
+                            <v-btn v-bind="attrs" v-on="on" link elevation="0" class="white"
                             >
                                 <v-icon>mdi-translate</v-icon>
                             </v-btn>
@@ -67,18 +67,18 @@
                         </v-list>
                     </v-menu>
 
-                <v-btn elevation="0" color="white"class="v-size--default" @click="forward('/account')">
+                <v-btn elevation="0" class="v-size--default white" @click="forward('/account')">
                     <v-icon >mdi-account</v-icon>
                 </v-btn>
 
-                <v-btn elevation="0" color="white"class="v-size--default" @click="forward('/cart')">
+                <v-btn elevation="0" class="v-size--default white" @click="forward('/cart')">
                     <v-icon>mdi-cart-variant</v-icon>
                 </v-btn>
             </v-toolbar-items>
         </v-app-bar>
         <v-navigation-drawer
             v-model="drawer"
-            absolute
+            fixed
             temporary
         >
             <v-list-item @click="() => {}">

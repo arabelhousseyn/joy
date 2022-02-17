@@ -6,6 +6,7 @@
                 <appbar-component v-if="$store.state.show" />
                 <header-component />
                 <router-view />
+                <footer-component />
             </div>
             <div v-if="!isWeb" class="mobile">
             </div>
@@ -16,6 +17,7 @@
 import appbarComponent from '../components/web/appbarComponent'
 import progressComponent from '../components/progressComponent'
 import HeaderComponent from "../components/web/HeaderComponent";
+import FooterComponent from "../components/FooterComponent";
 
 export default {
     data : () =>{
@@ -24,6 +26,7 @@ export default {
       }
     },
     components : {
+        FooterComponent,
         HeaderComponent,
         appbarComponent,
         progressComponent

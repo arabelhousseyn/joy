@@ -1496,7 +1496,7 @@ var render = function () {
             [
               _c(
                 "v-col",
-                { attrs: { cols: "4" } },
+                { attrs: { cols: "2" } },
                 [
                   _c(
                     "v-list",
@@ -1555,7 +1555,7 @@ var render = function () {
                 1
               ),
               _vm._v(" "),
-              _c("v-col", { attrs: { cols: "8" } }, [
+              _c("v-col", { attrs: { cols: "10" } }, [
                 _c(
                   "div",
                   { staticClass: "head" },
@@ -1636,7 +1636,7 @@ var render = function () {
                           "v-col",
                           {
                             key: index,
-                            attrs: { cols: "12", lg: "4", md: "6" },
+                            attrs: { cols: "6", lg: "3", md: "4" },
                           },
                           [_c("product-card-component")],
                           1

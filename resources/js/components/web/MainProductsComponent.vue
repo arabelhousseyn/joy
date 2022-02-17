@@ -3,7 +3,7 @@
         <HeadingTitleComponent title="Products" icon="mdi mdi-cart" />
         <div class="side-filter">
             <v-row>
-                <v-col cols="4">
+                <v-col cols="2">
                         <v-list flat color="transparent">
                             <v-list-item-group
                                 v-model="model"
@@ -25,7 +25,7 @@
                             </v-list-item-group>
                         </v-list>
                 </v-col>
-                <v-col cols="8">
+                <v-col cols="10">
                     <div class="head">
                         <v-chip-group>
                             <v-chip label color="transparent">
@@ -39,7 +39,7 @@
                     </div>
                     <div class="products">
                         <v-row>
-                            <v-col v-for="(item,index) in 48" :key="index" cols="12" lg="4" md="6">
+                            <v-col v-for="(item,index) in 48" :key="index" cols="6" lg="3" md="4">
                                 <product-card-component />
                             </v-col>
                         </v-row>
