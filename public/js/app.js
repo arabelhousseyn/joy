@@ -5979,7 +5979,8 @@ vue__WEBPACK_IMPORTED_MODULE_0__["default"].use(vuex__WEBPACK_IMPORTED_MODULE_1_
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store({
   state: {
     isLogged: false,
-    show: true
+    show: true,
+    show1: true
   },
   mutations: {
     CHECK_URL: function CHECK_URL(store, option) {
@@ -5989,6 +5990,10 @@ vue__WEBPACK_IMPORTED_MODULE_0__["default"].use(vuex__WEBPACK_IMPORTED_MODULE_1_
 
         if (url[3] == 'reset') {
           store.show = false;
+        }
+
+        if (url[3] == 'signup') {
+          store.show1 = false;
         }
       } catch (e) {
         console.log(e.toString());
@@ -31017,11 +31022,11 @@ var render = function () {
                 [
                   _vm.$store.state.show ? _c("appbar-component") : _vm._e(),
                   _vm._v(" "),
-                  _c("header-component"),
+                  _vm.$store.state.show1 ? _c("header-component") : _vm._e(),
                   _vm._v(" "),
                   _c("router-view"),
                   _vm._v(" "),
-                  _c("footer-component"),
+                  _vm.$store.state.show ? _c("footer-component") : _vm._e(),
                 ],
                 1
               )

@@ -4,9 +4,9 @@
             <progress-component />
             <div v-if="isWeb" class="web">
                 <appbar-component v-if="$store.state.show" />
-                <header-component />
+                <header-component  v-if="$store.state.show1"/>
                 <router-view />
-                <footer-component />
+                <footer-component v-if="$store.state.show" />
             </div>
             <div v-if="!isWeb" class="mobile">
             </div>

@@ -7,6 +7,7 @@ export default new Vuex.Store({
     state: {
         isLogged : false,
         show : true,
+        show1 : true,
     },
     mutations: {
         CHECK_URL(store,option)
@@ -17,6 +18,10 @@ export default new Vuex.Store({
                 if(url[3] == 'reset')
                 {
                     store.show = false
+                }
+                if(url[3] == 'signup')
+                {
+                    store.show1 = false
                 }
             }catch (e) {
                 console.log(e.toString())
