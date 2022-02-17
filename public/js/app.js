@@ -5262,6 +5262,20 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
@@ -29874,17 +29888,79 @@ var render = function () {
     [
       _c("h2", { staticClass: "mb-5" }, [_vm._v("Contact us")]),
       _vm._v(" "),
-      _c("p", { staticClass: "footer-text" }, [
-        _vm._v("Log cem attba djilali z06 chorfa chlef"),
-      ]),
-      _vm._v(" "),
-      _c("p", { staticClass: "footer-text" }, [
-        _vm._v("Email : hocine.arab1@hotmail.com"),
-      ]),
-      _vm._v(" "),
-      _c("p", { staticClass: "footer-text" }, [
-        _vm._v("Phone : +213699687499"),
-      ]),
+      _c(
+        "v-list",
+        { attrs: { color: "transparent", dense: "" } },
+        [
+          _c(
+            "v-list-item",
+            [
+              _c(
+                "v-list-item-content",
+                [
+                  _c(
+                    "v-list-item-title",
+                    { staticStyle: { "font-size": "14px" } },
+                    [
+                      _c("p", { staticClass: "footer-text" }, [
+                        _vm._v("Log cem attba djilali z06 chorfa chlef"),
+                      ]),
+                    ]
+                  ),
+                ],
+                1
+              ),
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-list-item",
+            [
+              _c(
+                "v-list-item-content",
+                [
+                  _c(
+                    "v-list-item-title",
+                    { staticStyle: { "font-size": "14px" } },
+                    [
+                      _c("p", { staticClass: "footer-text" }, [
+                        _vm._v("Email : hocine.arab1@hotmail.com"),
+                      ]),
+                    ]
+                  ),
+                ],
+                1
+              ),
+            ],
+            1
+          ),
+          _vm._v(" "),
+          _c(
+            "v-list-item",
+            [
+              _c(
+                "v-list-item-content",
+                [
+                  _c(
+                    "v-list-item-title",
+                    { staticStyle: { "font-size": "14px" } },
+                    [
+                      _c("p", { staticClass: "footer-text" }),
+                      _c("p", { staticClass: "footer-text" }, [
+                        _vm._v("Phone : +213699687499"),
+                      ]),
+                    ]
+                  ),
+                ],
+                1
+              ),
+            ],
+            1
+          ),
+        ],
+        1
+      ),
       _vm._v(" "),
       _vm._l(_vm.icons, function (icon) {
         return _c(
@@ -30081,7 +30157,7 @@ var render = function () {
   var _c = _vm._self._c || _h
   return _c(
     "v-footer",
-    { staticClass: "secondary ", attrs: { dark: "", padless: "" } },
+    { staticClass: "secondary", attrs: { dark: "", padless: "" } },
     [
       _c(
         "v-container",

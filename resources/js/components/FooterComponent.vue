@@ -2,7 +2,7 @@
     <v-footer
         dark
         padless
-        class="secondary "
+        class="secondary"
     >
         <v-container fluid>
             <v-row>
