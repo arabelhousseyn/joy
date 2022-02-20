@@ -5944,6 +5944,11 @@ var routes = [{
   component: function component() {
     return __webpack_require__.e(/*! import() */ "resources_js_components_ResetPasswordConfirm_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../components/ResetPasswordConfirm */ "./resources/js/components/ResetPasswordConfirm.vue"));
   }
+}, {
+  path: '/:category',
+  component: function component() {
+    return __webpack_require__.e(/*! import() */ "resources_js_pages_CategoryPage_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../pages/CategoryPage */ "./resources/js/pages/CategoryPage.vue"));
+  }
 }];
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
   mode: 'history',
@@ -30385,7 +30390,7 @@ var render = function () {
         "v-app-bar",
         {
           staticClass: "white",
-          attrs: { elevation: "1", "hide-on-scroll": "" },
+          attrs: { elevation: "0", "hide-on-scroll": "" },
         },
         [
           _c("v-app-bar-nav-icon", {
@@ -94006,7 +94011,7 @@ module.exports = JSON.parse('{"_args":[["axios@0.21.4","C:\\\\wamp64\\\\www\\\\j
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_components_MainComponent_vue":1,"resources_js_components_ActionComponent_vue":1,"resources_js_components_ResetComponent_vue":1,"resources_js_components_ResetPasswordConfirm_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_components_MainComponent_vue":1,"resources_js_components_ActionComponent_vue":1,"resources_js_components_ResetComponent_vue":1,"resources_js_components_ResetPasswordConfirm_vue":1,"resources_js_pages_CategoryPage_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};

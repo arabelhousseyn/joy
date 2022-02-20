@@ -1,6 +1,6 @@
 <template>
     <div id="appbar">
-        <v-app-bar elevation="1" hide-on-scroll class="white">
+        <v-app-bar elevation="0" hide-on-scroll class="white">
                <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
                <v-toolbar-title>Joy</v-toolbar-title>
             <v-spacer></v-spacer>

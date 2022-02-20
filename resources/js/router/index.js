@@ -19,6 +19,10 @@ const routes = [
     {
         path : '/reset-password',
         component: () => import('../components/ResetPasswordConfirm')
+    },
+    {
+        path : '/:category',
+        component : () => import('../pages/CategoryPage')
     }
 ]
 

@@ -13,7 +13,7 @@
                         class="ma-4 py-0"
                         width="305"
                         @click="toggle"
-                        elevation="1"
+                        elevation="0"
                     >
                         <div class="pt-4 px-4 text-center">
                             <h2 class="text-capitalize">title</h2>

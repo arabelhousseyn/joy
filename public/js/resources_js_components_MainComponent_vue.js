@@ -892,7 +892,7 @@ var render = function () {
     [
       _c(
         "v-card",
-        { staticClass: "crd", attrs: { elevation: "1" } },
+        { staticClass: "crd", attrs: { elevation: "0" } },
         [
           _c(
             "div",
@@ -1356,7 +1356,7 @@ var render = function () {
                 "v-card",
                 {
                   staticClass: "ma-4 py-0",
-                  attrs: { width: "305", elevation: "1" },
+                  attrs: { width: "305", elevation: "0" },
                   on: { click: _vm.toggle },
                 },
                 [

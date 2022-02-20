@@ -1,6 +1,6 @@
 <template>
     <div class="product-card">
-        <v-card elevation="1" class="crd">
+        <v-card elevation="0" class="crd">
             <div class="eyes d-flex flex-column p-absolute right-0 z-1 mr-2 mt-1">
                 <v-tooltip bottom>
                     <template v-slot:activator="{ on, attrs }">
