@@ -14,7 +14,9 @@
         "laravel/tinker": "^2.5",
         "laravel/ui": "^3.4",
         "mongodb/mongodb": "^1.11",
-        "spatie/laravel-translatable": "^5.1"
+        "nexmo/client": "^2.4",
+        "spatie/laravel-translatable": "^5.1",
+        "vonage/client": "^3.0"
     },
     "require-dev": {
         "facade/ignition": "^2.5",
