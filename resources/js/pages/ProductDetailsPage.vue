@@ -1,13 +1,15 @@
 <template>
     <div class="product-details-component">
         <v-container fluid>
-            <breand-crumbs-product />
+            <bread-crumbs-product />
+            <title-product-component />
         </v-container>
     </div>
 </template>
 <script>
-import BreandCrumbsProduct from "../components/BreandCrumbsProductComponent";
+import BreadCrumbsProduct from "../components/BreadCrumbsProductComponent";
+import TitleProductComponent from "../components/TitleProductComponent";
 export default {
-    components: {BreandCrumbsProduct}
+    components: {TitleProductComponent, BreadCrumbsProduct}
 }
 </script>

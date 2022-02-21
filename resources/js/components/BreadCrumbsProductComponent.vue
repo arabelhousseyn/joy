@@ -1,6 +1,6 @@
 <template>
     <div class="bread-crumbs-product">
-        <v-breadcrumbs class="py-0">
+        <v-breadcrumbs class="py-0 pl-0">
             <v-breadcrumbs-item>
                 <v-btn depressed small class="secondary--text pa-0">
                     <router-link class="secondary--text" to="/">Auto</router-link>
