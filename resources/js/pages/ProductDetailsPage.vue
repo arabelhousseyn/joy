@@ -6,7 +6,7 @@
     </div>
 </template>
 <script>
-import BreandCrumbsProduct from "../components/BreandCrumbsProduct";
+import BreandCrumbsProduct from "../components/BreandCrumbsProductComponent";
 export default {
     components: {BreandCrumbsProduct}
 }

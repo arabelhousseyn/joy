@@ -11,7 +11,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _components_BreandCrumbsProduct__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/BreandCrumbsProduct */ "./resources/js/components/BreandCrumbsProduct.vue");
+/* harmony import */ var _components_BreandCrumbsProductComponent__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../components/BreandCrumbsProductComponent */ "./resources/js/components/BreandCrumbsProductComponent.vue");
 //
 //
 //
@@ -22,23 +22,23 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
-    BreandCrumbsProduct: _components_BreandCrumbsProduct__WEBPACK_IMPORTED_MODULE_0__["default"]
+    BreandCrumbsProduct: _components_BreandCrumbsProductComponent__WEBPACK_IMPORTED_MODULE_0__["default"]
   }
 });
 
 /***/ }),
 
-/***/ "./resources/js/components/BreandCrumbsProduct.vue":
-/*!*********************************************************!*\
-  !*** ./resources/js/components/BreandCrumbsProduct.vue ***!
-  \*********************************************************/
+/***/ "./resources/js/components/BreandCrumbsProductComponent.vue":
+/*!******************************************************************!*\
+  !*** ./resources/js/components/BreandCrumbsProductComponent.vue ***!
+  \******************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _BreandCrumbsProduct_vue_vue_type_template_id_23670ada___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./BreandCrumbsProduct.vue?vue&type=template&id=23670ada& */ "./resources/js/components/BreandCrumbsProduct.vue?vue&type=template&id=23670ada&");
+/* harmony import */ var _BreandCrumbsProductComponent_vue_vue_type_template_id_65c60af3___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./BreandCrumbsProductComponent.vue?vue&type=template&id=65c60af3& */ "./resources/js/components/BreandCrumbsProductComponent.vue?vue&type=template&id=65c60af3&");
 /* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
 var script = {}
@@ -48,8 +48,8 @@ var script = {}
 ;
 var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
   script,
-  _BreandCrumbsProduct_vue_vue_type_template_id_23670ada___WEBPACK_IMPORTED_MODULE_0__.render,
-  _BreandCrumbsProduct_vue_vue_type_template_id_23670ada___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  _BreandCrumbsProductComponent_vue_vue_type_template_id_65c60af3___WEBPACK_IMPORTED_MODULE_0__.render,
+  _BreandCrumbsProductComponent_vue_vue_type_template_id_65c60af3___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
   false,
   null,
   null,
@@ -59,7 +59,7 @@ var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__
 
 /* hot reload */
 if (false) { var api; }
-component.options.__file = "resources/js/components/BreandCrumbsProduct.vue"
+component.options.__file = "resources/js/components/BreandCrumbsProductComponent.vue"
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
 
 /***/ }),
@@ -117,18 +117,18 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./resources/js/components/BreandCrumbsProduct.vue?vue&type=template&id=23670ada&":
-/*!****************************************************************************************!*\
-  !*** ./resources/js/components/BreandCrumbsProduct.vue?vue&type=template&id=23670ada& ***!
-  \****************************************************************************************/
+/***/ "./resources/js/components/BreandCrumbsProductComponent.vue?vue&type=template&id=65c60af3&":
+/*!*************************************************************************************************!*\
+  !*** ./resources/js/components/BreandCrumbsProductComponent.vue?vue&type=template&id=65c60af3& ***!
+  \*************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_BreandCrumbsProduct_vue_vue_type_template_id_23670ada___WEBPACK_IMPORTED_MODULE_0__.render),
-/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_BreandCrumbsProduct_vue_vue_type_template_id_23670ada___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_BreandCrumbsProductComponent_vue_vue_type_template_id_65c60af3___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_BreandCrumbsProductComponent_vue_vue_type_template_id_65c60af3___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
-/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_BreandCrumbsProduct_vue_vue_type_template_id_23670ada___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./BreandCrumbsProduct.vue?vue&type=template&id=23670ada& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/BreandCrumbsProduct.vue?vue&type=template&id=23670ada&");
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_BreandCrumbsProductComponent_vue_vue_type_template_id_65c60af3___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./BreandCrumbsProductComponent.vue?vue&type=template&id=65c60af3& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/BreandCrumbsProductComponent.vue?vue&type=template&id=65c60af3&");
 
 
 /***/ }),
@@ -149,10 +149,10 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
-/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/BreandCrumbsProduct.vue?vue&type=template&id=23670ada&":
-/*!*******************************************************************************************************************************************************************************************************************************!*\
-  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/BreandCrumbsProduct.vue?vue&type=template&id=23670ada& ***!
-  \*******************************************************************************************************************************************************************************************************************************/
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/BreandCrumbsProductComponent.vue?vue&type=template&id=65c60af3&":
+/*!****************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/components/BreandCrumbsProductComponent.vue?vue&type=template&id=65c60af3& ***!
+  \****************************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 __webpack_require__.r(__webpack_exports__);
