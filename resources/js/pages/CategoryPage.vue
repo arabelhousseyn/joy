@@ -2,6 +2,7 @@
     <div class="category">
         <v-container fluid>
             <title-category-component />
+            <breadcrumbs-category-component />
             <v-row>
                 <v-col cols="3">
 
@@ -16,8 +17,9 @@
 
 <script>
 import TitleCategoryComponent from "../components/TitleCategoryComponent"
+import BreadcrumbsCategoryComponent from "../components/BreadcrumbsCategoryComponent";
 export default {
-    components: { TitleCategoryComponent},
+    components: {BreadcrumbsCategoryComponent, TitleCategoryComponent},
     data : () => ({
 
     }),
