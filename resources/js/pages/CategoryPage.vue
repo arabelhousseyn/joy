@@ -23,7 +23,7 @@
                                             :items="items"
                                             attach
                                             chips
-                                            label="Proviences"
+                                            placeholder="Provinces"
                                             multiple
                                             solo
                                             hide-details
@@ -35,7 +35,7 @@
                                             :items="items"
                                             attach
                                             chips
-                                            label="Proviences"
+                                            placeholder="Provinces"
                                             multiple
                                             solo
                                             hide-details
@@ -47,7 +47,7 @@
                                             :items="items"
                                             attach
                                             chips
-                                            label="Proviences"
+                                            placeholder="Provinces"
                                             multiple
                                             solo
                                             hide-details
@@ -59,7 +59,7 @@
                                             :items="items"
                                             attach
                                             chips
-                                            label="Proviences"
+                                            placeholder="Provinces"
                                             multiple
                                             solo
                                             hide-details
@@ -71,7 +71,7 @@
                                             :items="items"
                                             attach
                                             chips
-                                            label="Proviences"
+                                            placeholder="Provinces"
                                             multiple
                                             solo
                                             hide-details
