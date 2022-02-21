@@ -2,13 +2,13 @@
     <div >
         <v-app style="background-color: #f5f5f5 !important;">
             <progress-component />
-            <div v-if="isWeb" class="web">
+            <div v-if="$store.state.isWeb" class="web">
                 <appbar-component v-if="$store.state.show" />
                 <header-component  v-if="$store.state.show1"/>
                 <router-view />
                 <footer-component v-if="$store.state.show" />
             </div>
-            <div v-if="!isWeb" class="mobile">
+            <div v-if="!$store.state.isWeb" class="mobile">
             </div>
         </v-app>
     </div>
@@ -22,7 +22,7 @@ import FooterComponent from "../components/FooterComponent";
 export default {
     data : () =>{
       return{
-          isWeb : true,
+
       }
     },
     components : {
@@ -33,9 +33,11 @@ export default {
     },
     created() {
         let device = navigator.userAgent
-        if(device.includes('Android'))
+        console.log(device)
+        if(device.includes('Android') || device.includes('iPhone'))
         {
-            this.isWeb = false
+            this.$store.commit('SET_STATUS',false)
+
         }
         this.$store.commit('CHECK_URL')
     }

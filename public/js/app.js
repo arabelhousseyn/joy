@@ -5756,9 +5756,7 @@ __webpack_require__.r(__webpack_exports__);
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
-    return {
-      isWeb: true
-    };
+    return {};
   },
   components: {
     FooterComponent: _components_FooterComponent__WEBPACK_IMPORTED_MODULE_3__["default"],
@@ -5768,9 +5766,10 @@ __webpack_require__.r(__webpack_exports__);
   },
   created: function created() {
     var device = navigator.userAgent;
+    console.log(device);
 
-    if (device.includes('Android')) {
-      this.isWeb = false;
+    if (device.includes('Android') || device.includes('iPhone')) {
+      this.$store.commit('SET_STATUS', false);
     }
 
     this.$store.commit('CHECK_URL');
@@ -5989,7 +5988,8 @@ vue__WEBPACK_IMPORTED_MODULE_0__["default"].use(vuex__WEBPACK_IMPORTED_MODULE_1_
   state: {
     isLogged: false,
     show: true,
-    show1: true
+    show1: true,
+    isWeb: true
   },
   mutations: {
     CHECK_URL: function CHECK_URL(store, option) {
@@ -6043,6 +6043,9 @@ vue__WEBPACK_IMPORTED_MODULE_0__["default"].use(vuex__WEBPACK_IMPORTED_MODULE_1_
       } catch (e) {
         console.log(e.toString());
       }
+    },
+    SET_STATUS: function SET_STATUS(store, value) {
+      store.isWeb = value;
     }
   },
   actions: {},
@@ -31034,7 +31037,7 @@ var render = function () {
         [
           _c("progress-component"),
           _vm._v(" "),
-          _vm.isWeb
+          _vm.$store.state.isWeb
             ? _c(
                 "div",
                 { staticClass: "web" },
@@ -31051,7 +31054,9 @@ var render = function () {
               )
             : _vm._e(),
           _vm._v(" "),
-          !_vm.isWeb ? _c("div", { staticClass: "mobile" }) : _vm._e(),
+          !_vm.$store.state.isWeb
+            ? _c("div", { staticClass: "mobile" })
+            : _vm._e(),
         ],
         1
       ),

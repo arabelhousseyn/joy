@@ -332,6 +332,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 
 
 
@@ -1450,152 +1452,159 @@ var render = function () {
           _c("breadcrumbs-category-component"),
           _vm._v(" "),
           _c(
-            "v-row",
-            { staticClass: "pt-2" },
+            "div",
+            { staticClass: "data" },
             [
-              _c("v-col", { attrs: { cols: "3" } }, [
-                _c(
-                  "div",
-                  { staticClass: "sidebar d-none d-md-block d-lg-block" },
-                  [
+              _c(
+                "v-row",
+                { staticClass: "pt-2" },
+                [
+                  _c("v-col", { attrs: { cols: "3" } }, [
                     _c(
-                      "affix",
-                      {
-                        staticClass: "sidebar",
-                        attrs: { "relative-element-selector": "#products" },
-                      },
+                      "div",
+                      { staticClass: "sidebar d-none d-md-block d-lg-block" },
                       [
                         _c(
-                          "v-card",
+                          "affix",
+                          {
+                            staticClass: "sidebar",
+                            attrs: { "relative-element-selector": "#products" },
+                          },
                           [
                             _c(
-                              "v-form",
-                              { staticClass: "px-2 py-2" },
+                              "v-card",
                               [
-                                _c("v-text-field", {
-                                  attrs: {
-                                    "append-icon": "mdi-magnify",
-                                    placeholder: "Search",
-                                    filled: "",
-                                    rounded: "",
-                                    dense: "",
-                                  },
-                                }),
-                              ],
-                              1
-                            ),
-                            _vm._v(" "),
-                            _c(
-                              "v-list",
-                              { staticClass: "px-2 py-2" },
-                              [
-                                _c("v-select", {
-                                  attrs: {
-                                    items: _vm.items,
-                                    attach: "",
-                                    chips: "",
-                                    placeholder: "Provinces",
-                                    multiple: "",
-                                    solo: "",
-                                    "hide-details": "",
-                                    flat: "",
-                                  },
-                                  model: {
-                                    value: _vm.value,
-                                    callback: function ($$v) {
-                                      _vm.value = $$v
-                                    },
-                                    expression: "value",
-                                  },
-                                }),
+                                _c(
+                                  "v-form",
+                                  { staticClass: "px-2 py-2" },
+                                  [
+                                    _c("v-text-field", {
+                                      attrs: {
+                                        "append-icon": "mdi-magnify",
+                                        placeholder: "Search",
+                                        filled: "",
+                                        rounded: "",
+                                        dense: "",
+                                      },
+                                    }),
+                                  ],
+                                  1
+                                ),
                                 _vm._v(" "),
-                                _c("v-divider"),
-                                _vm._v(" "),
-                                _c("v-select", {
-                                  attrs: {
-                                    items: _vm.items,
-                                    attach: "",
-                                    chips: "",
-                                    placeholder: "Provinces",
-                                    multiple: "",
-                                    solo: "",
-                                    "hide-details": "",
-                                    flat: "",
-                                  },
-                                  model: {
-                                    value: _vm.value,
-                                    callback: function ($$v) {
-                                      _vm.value = $$v
-                                    },
-                                    expression: "value",
-                                  },
-                                }),
-                                _vm._v(" "),
-                                _c("v-divider"),
-                                _vm._v(" "),
-                                _c("v-select", {
-                                  attrs: {
-                                    items: _vm.items,
-                                    attach: "",
-                                    chips: "",
-                                    placeholder: "Provinces",
-                                    multiple: "",
-                                    solo: "",
-                                    "hide-details": "",
-                                    flat: "",
-                                  },
-                                  model: {
-                                    value: _vm.value,
-                                    callback: function ($$v) {
-                                      _vm.value = $$v
-                                    },
-                                    expression: "value",
-                                  },
-                                }),
-                                _vm._v(" "),
-                                _c("v-divider"),
-                                _vm._v(" "),
-                                _c("v-select", {
-                                  attrs: {
-                                    items: _vm.items,
-                                    attach: "",
-                                    chips: "",
-                                    placeholder: "Provinces",
-                                    multiple: "",
-                                    solo: "",
-                                    "hide-details": "",
-                                    flat: "",
-                                  },
-                                  model: {
-                                    value: _vm.value,
-                                    callback: function ($$v) {
-                                      _vm.value = $$v
-                                    },
-                                    expression: "value",
-                                  },
-                                }),
-                                _vm._v(" "),
-                                _c("v-divider"),
-                                _vm._v(" "),
-                                _c("v-select", {
-                                  attrs: {
-                                    items: _vm.items,
-                                    attach: "",
-                                    chips: "",
-                                    placeholder: "Provinces",
-                                    multiple: "",
-                                    solo: "",
-                                    "hide-details": "",
-                                    flat: "",
-                                  },
-                                  model: {
-                                    value: _vm.value,
-                                    callback: function ($$v) {
-                                      _vm.value = $$v
-                                    },
-                                    expression: "value",
-                                  },
-                                }),
+                                _c(
+                                  "v-list",
+                                  { staticClass: "px-2 py-2" },
+                                  [
+                                    _c("v-select", {
+                                      attrs: {
+                                        items: _vm.items,
+                                        attach: "",
+                                        chips: "",
+                                        placeholder: "Provinces",
+                                        multiple: "",
+                                        solo: "",
+                                        "hide-details": "",
+                                        flat: "",
+                                      },
+                                      model: {
+                                        value: _vm.value,
+                                        callback: function ($$v) {
+                                          _vm.value = $$v
+                                        },
+                                        expression: "value",
+                                      },
+                                    }),
+                                    _vm._v(" "),
+                                    _c("v-divider"),
+                                    _vm._v(" "),
+                                    _c("v-select", {
+                                      attrs: {
+                                        items: _vm.items,
+                                        attach: "",
+                                        chips: "",
+                                        placeholder: "Provinces",
+                                        multiple: "",
+                                        solo: "",
+                                        "hide-details": "",
+                                        flat: "",
+                                      },
+                                      model: {
+                                        value: _vm.value,
+                                        callback: function ($$v) {
+                                          _vm.value = $$v
+                                        },
+                                        expression: "value",
+                                      },
+                                    }),
+                                    _vm._v(" "),
+                                    _c("v-divider"),
+                                    _vm._v(" "),
+                                    _c("v-select", {
+                                      attrs: {
+                                        items: _vm.items,
+                                        attach: "",
+                                        chips: "",
+                                        placeholder: "Provinces",
+                                        multiple: "",
+                                        solo: "",
+                                        "hide-details": "",
+                                        flat: "",
+                                      },
+                                      model: {
+                                        value: _vm.value,
+                                        callback: function ($$v) {
+                                          _vm.value = $$v
+                                        },
+                                        expression: "value",
+                                      },
+                                    }),
+                                    _vm._v(" "),
+                                    _c("v-divider"),
+                                    _vm._v(" "),
+                                    _c("v-select", {
+                                      attrs: {
+                                        items: _vm.items,
+                                        attach: "",
+                                        chips: "",
+                                        placeholder: "Provinces",
+                                        multiple: "",
+                                        solo: "",
+                                        "hide-details": "",
+                                        flat: "",
+                                      },
+                                      model: {
+                                        value: _vm.value,
+                                        callback: function ($$v) {
+                                          _vm.value = $$v
+                                        },
+                                        expression: "value",
+                                      },
+                                    }),
+                                    _vm._v(" "),
+                                    _c("v-divider"),
+                                    _vm._v(" "),
+                                    _c("v-select", {
+                                      attrs: {
+                                        items: _vm.items,
+                                        attach: "",
+                                        chips: "",
+                                        placeholder: "Provinces",
+                                        multiple: "",
+                                        solo: "",
+                                        "hide-details": "",
+                                        flat: "",
+                                      },
+                                      model: {
+                                        value: _vm.value,
+                                        callback: function ($$v) {
+                                          _vm.value = $$v
+                                        },
+                                        expression: "value",
+                                      },
+                                    }),
+                                  ],
+                                  1
+                                ),
                               ],
                               1
                             ),
@@ -1605,64 +1614,64 @@ var render = function () {
                       ],
                       1
                     ),
-                  ],
-                  1
-                ),
-              ]),
-              _vm._v(" "),
-              _c("v-col", { attrs: { cols: "9" } }, [
-                _c(
-                  "div",
-                  { staticClass: "products", attrs: { id: "products" } },
-                  [
+                  ]),
+                  _vm._v(" "),
+                  _c("v-col", { attrs: { cols: "9" } }, [
                     _c(
-                      "v-row",
+                      "div",
+                      { staticClass: "products", attrs: { id: "products" } },
                       [
-                        _vm._l(44, function (value, index) {
-                          return _c(
-                            "v-col",
-                            {
-                              key: index,
-                              attrs: { cols: "12", lg: "3", sm: "6" },
-                            },
-                            [_c("product-card-component")],
-                            1
-                          )
-                        }),
-                        _vm._v(" "),
                         _c(
-                          "div",
-                          {
-                            staticClass:
-                              "d-flex justify-center align-center mt-4",
-                          },
+                          "v-row",
                           [
+                            _vm._l(44, function (value, index) {
+                              return _c(
+                                "v-col",
+                                {
+                                  key: index,
+                                  attrs: { cols: "12", lg: "3", sm: "6" },
+                                },
+                                [_c("product-card-component")],
+                                1
+                              )
+                            }),
+                            _vm._v(" "),
                             _c(
                               "div",
-                              { staticClass: "w-100 my-2" },
+                              {
+                                staticClass:
+                                  "d-flex justify-center align-center mt-4",
+                              },
                               [
-                                _c("v-pagination", {
-                                  attrs: { length: 6 },
-                                  model: {
-                                    value: _vm.page,
-                                    callback: function ($$v) {
-                                      _vm.page = $$v
-                                    },
-                                    expression: "page",
-                                  },
-                                }),
-                              ],
-                              1
+                                _c(
+                                  "div",
+                                  { staticClass: "w-100 my-2" },
+                                  [
+                                    _c("v-pagination", {
+                                      attrs: { length: 6 },
+                                      model: {
+                                        value: _vm.page,
+                                        callback: function ($$v) {
+                                          _vm.page = $$v
+                                        },
+                                        expression: "page",
+                                      },
+                                    }),
+                                  ],
+                                  1
+                                ),
+                              ]
                             ),
-                          ]
+                          ],
+                          2
                         ),
                       ],
-                      2
+                      1
                     ),
-                  ],
-                  1
-                ),
-              ]),
+                  ]),
+                ],
+                1
+              ),
             ],
             1
           ),

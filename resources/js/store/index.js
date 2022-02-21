@@ -8,6 +8,7 @@ export default new Vuex.Store({
         isLogged : false,
         show : true,
         show1 : true,
+        isWeb : true,
     },
     mutations: {
         CHECK_URL(store,option)
@@ -53,6 +54,10 @@ export default new Vuex.Store({
             }catch (e) {
                 console.log(e.toString())
             }
+        },
+        SET_STATUS(store,value)
+        {
+            store.isWeb = value
         }
     },
     actions: {

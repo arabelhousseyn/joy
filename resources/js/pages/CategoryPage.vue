@@ -3,8 +3,9 @@
         <v-container fluid>
             <title-category-component />
             <breadcrumbs-category-component />
-            <v-row class="pt-2">
-                <v-col cols="3">
+            <div class="data">
+                <v-row class="pt-2">
+                    <v-col cols="3">
                         <div class="sidebar d-none d-md-block d-lg-block">
                             <affix class="sidebar" relative-element-selector="#products">
                                 <v-card>
@@ -29,7 +30,7 @@
                                             hide-details
                                             flat
                                         ></v-select>
-                                       <v-divider></v-divider>
+                                        <v-divider></v-divider>
                                         <v-select
                                             v-model="value"
                                             :items="items"
@@ -81,25 +82,26 @@
                                 </v-card>
                             </affix>
                         </div>
-                </v-col>
-                <v-col cols="9">
-                    <div class="products" id="products">
-                        <v-row>
-                            <v-col v-for="(value,index) in 44" :key="index" cols="12" lg="3" sm="6">
-                                <product-card-component />
-                            </v-col>
-                            <div class="d-flex justify-center align-center mt-4">
-                                <div class="w-100 my-2">
-                                    <v-pagination
-                                        v-model="page"
-                                        :length="6"
-                                    ></v-pagination>
+                    </v-col>
+                    <v-col cols="9">
+                        <div class="products" id="products">
+                            <v-row>
+                                <v-col v-for="(value,index) in 44" :key="index" cols="12" lg="3" sm="6">
+                                    <product-card-component />
+                                </v-col>
+                                <div class="d-flex justify-center align-center mt-4">
+                                    <div class="w-100 my-2">
+                                        <v-pagination
+                                            v-model="page"
+                                            :length="6"
+                                        ></v-pagination>
+                                    </div>
                                 </div>
-                            </div>
-                        </v-row>
-                    </div>
-                </v-col>
-            </v-row>
+                            </v-row>
+                        </div>
+                    </v-col>
+                </v-row>
+            </div>
         </v-container>
     </div>
 </template>
