@@ -33,7 +33,6 @@ export default {
     },
     created() {
         let device = navigator.userAgent
-        console.log(device)
         if(device.includes('Android') || device.includes('iPhone'))
         {
             this.$store.commit('SET_STATUS',false)

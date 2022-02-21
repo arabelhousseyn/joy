@@ -5766,7 +5766,6 @@ __webpack_require__.r(__webpack_exports__);
   },
   created: function created() {
     var device = navigator.userAgent;
-    console.log(device);
 
     if (device.includes('Android') || device.includes('iPhone')) {
       this.$store.commit('SET_STATUS', false);
@@ -5951,6 +5950,11 @@ var routes = [{
   path: '/:category',
   component: function component() {
     return __webpack_require__.e(/*! import() */ "resources_js_pages_CategoryPage_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../pages/CategoryPage */ "./resources/js/pages/CategoryPage.vue"));
+  }
+}, {
+  path: '/product/:slug',
+  component: function component() {
+    return __webpack_require__.e(/*! import() */ "resources_js_pages_ProductDetailsPage_vue").then(__webpack_require__.bind(__webpack_require__, /*! ../pages/ProductDetailsPage */ "./resources/js/pages/ProductDetailsPage.vue"));
   }
 }];
 var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
@@ -94030,7 +94034,7 @@ module.exports = JSON.parse('{"_args":[["axios@0.21.4","C:\\\\wamp64\\\\www\\\\j
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames not based on template
-/******/ 			if ({"resources_js_components_MainComponent_vue":1,"resources_js_components_ActionComponent_vue":1,"resources_js_components_ResetComponent_vue":1,"resources_js_components_ResetPasswordConfirm_vue":1,"resources_js_pages_CategoryPage_vue":1}[chunkId]) return "js/" + chunkId + ".js";
+/******/ 			if ({"resources_js_components_MainComponent_vue":1,"resources_js_components_ActionComponent_vue":1,"resources_js_components_ResetComponent_vue":1,"resources_js_components_ResetPasswordConfirm_vue":1,"resources_js_pages_CategoryPage_vue":1,"resources_js_pages_ProductDetailsPage_vue":1}[chunkId]) return "js/" + chunkId + ".js";
 /******/ 			// return url for filenames based on template
 /******/ 			return undefined;
 /******/ 		};
