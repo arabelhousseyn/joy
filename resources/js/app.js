@@ -22,6 +22,8 @@ import vuetify from "./plugins/vuetify";
 import MasterPage from './pages/MasterPage'
 import router from './router/index'
 import store from './store/index'
+import Affix from 'vue-affix'
+window.Vue.use(Affix)
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
