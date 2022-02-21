@@ -15,7 +15,7 @@
                         <v-menu offset-y>
                             <template v-slot:activator="{ on, attrs }">
                                 <v-btn
-                                    style=" margin-top: -6px !important;"
+                                    style=" margin-top: -7px !important;"
                                     v-bind="attrs"
                                     v-on="on"
                                     elevation="0"
@@ -33,7 +33,7 @@
                     </template>
 
                     <template v-slot:append>
-                                <v-btn style=" margin-top: -6px !important;" rounded elevation="0" color="#3665f3">
+                                <v-btn style=" margin-top: -7px !important;" rounded elevation="0" color="#3665f3">
                                     <span style="color:white;"><v-icon>mdi-magnify</v-icon></span>
                                 </v-btn>
                     </template>

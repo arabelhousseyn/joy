@@ -30454,7 +30454,7 @@ var render = function () {
                                       {
                                         staticClass: "white",
                                         staticStyle: {
-                                          "margin-top": "-6px !important",
+                                          "margin-top": "-7px !important",
                                         },
                                         attrs: { elevation: "0" },
                                       },
@@ -30514,7 +30514,7 @@ var render = function () {
                     _c(
                       "v-btn",
                       {
-                        staticStyle: { "margin-top": "-6px !important" },
+                        staticStyle: { "margin-top": "-7px !important" },
                         attrs: {
                           rounded: "",
                           elevation: "0",
