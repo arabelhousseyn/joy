@@ -27,6 +27,7 @@
     "dependencies": {
         "@mdi/font": "^6.5.95",
         "vue-affix": "^0.5.2",
+        "vue-picture-swipe": "^2.1.0",
         "vue-router": "^3.5.3",
         "vuetify": "^2.6.1",
         "vuex": "^3.6.2"
