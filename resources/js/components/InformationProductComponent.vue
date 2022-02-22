@@ -10,7 +10,7 @@
                             v-for="item in desserts"
                             :key="item.name"
                         >
-                            <td>{{ item.name }}</td>
+                            <td class="grey--text">{{ item.name }}</td>
                             <td>{{ item.calories }}</td>
                         </tr>
                         </tbody>
@@ -19,11 +19,9 @@
             </v-container>
         </v-card>
 
-        <div class="title-contact mt-10 d-flex flex-row">
-            <v-avatar><v-icon large class="primary--text">mdi mdi-account-circle</v-icon></v-avatar><h2 class="grey--text mt-1"> Contact</h2>
-        </div>
+        <head-information-product icon="mdi mdi-account" title="Contact" />
 
-        <div class="contact mt-10">
+        <div class="contact mt-3">
             <v-card>
                 <v-container>
                     <v-list>
@@ -52,6 +50,46 @@
                 </v-container>
             </v-card>
         </div>
+
+        <head-information-product icon="mdi mdi-forum" title="Ask Question" />
+
+        <v-card class="ask-question mt-3">
+            <v-container>
+                <v-textarea
+                    class="py-0"
+                    name="input-7-1"
+                    filled
+                    placeholder="How much ? "
+                    auto-grow
+                    rounded
+                    dense
+                    rows="4"
+                    counter="255"
+                >
+                    <template v-slot:append>
+                        <v-btn class="mt-15 send-button-textarea" dense rounded elevation="0" style="background-color: transparent;">
+                            <v-icon class="primary--text">mdi-send</v-icon>
+                        </v-btn>
+                    </template>
+                </v-textarea>
+            </v-container>
+            <v-alert class="ma-0 rounded-0 v-alert--text">
+                    <div class="no-question">
+                        <h2 class="text-h6 text-center">No questions !</h2>
+                    </div>
+            </v-alert>
+        </v-card>
+
+        <head-information-product icon="mdi mdi-shopping" title="Simillar products" />
+
+        <div class="simillar-products">
+            <v-row>
+                <v-col v-for="(item,index) in 44 " :key="index" cols="3">
+                    <product-card-component />
+                </v-col>
+            </v-row>
+        </div>
+
     </div>
 </template>
 
@@ -59,10 +97,16 @@
 .gallery-thumbnail[data-v-9f16f656]{
     display: inline-block !important;
 }
+.send-button-textarea{
+    position: relative;
+    left: 18px;
+}
 </style>
 
 <script>
 import VuePictureSwipe from 'vue-picture-swipe'
+import HeadInformationProduct from './HeadInformationProduct'
+import ProductCardComponent from "./ProductCardComponent";
 export default {
     data() {
         return {
@@ -148,6 +192,8 @@ export default {
         };
     },
     components : {
+        ProductCardComponent,
+        HeadInformationProduct,
          VuePictureSwipe
     }
 }
