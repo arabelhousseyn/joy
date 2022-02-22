@@ -6880,7 +6880,7 @@ var render = function () {
       _vm._v(" "),
       _c(
         "div",
-        { staticClass: "simillar-products" },
+        { staticClass: "simillar-products mt-3" },
         [
           _c(
             "v-row",

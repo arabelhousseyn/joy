@@ -82,7 +82,7 @@
 
         <head-information-product icon="mdi mdi-shopping" title="Simillar products" />
 
-        <div class="simillar-products">
+        <div class="simillar-products mt-3">
             <v-row>
                 <v-col v-for="(item,index) in 44 " :key="index" cols="3">
                     <product-card-component />
