@@ -117,8 +117,8 @@
 <script>
 
 import TitleCategoryComponent from "../components/TitleCategoryComponent"
-import BreadcrumbsCategoryComponent from "../components/BreadcrumbsCategoryComponent";
-import ProductCardComponent from "../components/ProductCardComponent";
+import BreadcrumbsCategoryComponent from "../components/BreadcrumbsCategoryComponent"
+import ProductCardComponent from "../components/ProductCardComponent"
 export default {
     components: {ProductCardComponent, BreadcrumbsCategoryComponent, TitleCategoryComponent},
     data : () => ({
