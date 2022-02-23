@@ -27,6 +27,10 @@ const routes = [
     {
         path : '/product/:slug',
         component : () => import('../pages/ProductDetailsPage')
+    },
+    {
+        path : '/search/:slug',
+        component : () => import('../pages/SearchPage')
     }
 ]
 
