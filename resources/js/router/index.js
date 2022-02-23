@@ -31,6 +31,10 @@ const routes = [
     {
         path : '/search/:slug',
         component : () => import('../pages/SearchPage')
+    },
+    {
+        path : '/my/space',
+        component : () => import('../pages/ProfilePage')
     }
 ]
 
