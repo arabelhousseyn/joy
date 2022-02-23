@@ -20,7 +20,9 @@ __webpack_require__.r(__webpack_exports__);
 //
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   mounted: function mounted() {
-    var link = window.location.pathname.split('/').pop();
+    // check if the last path name splited is default search or not by using pop method
+    var link = window.location.pathname.split('/').pop(); // check if the search exists
+
     var params = window.location.search;
 
     if (params == '' || link == 'search') {
